@@ -2,6 +2,42 @@
 
 A Jekyll-based website providing educational resources for data science students and educators.
 
+## Managing FAQs
+
+The website includes a simple FAQ section using markdown headers and paragraphs.
+
+### Structure of an FAQ Item
+
+Each FAQ consists of a level 2 heading (##) followed by paragraph text:
+
+```markdown
+## Your Question Here?
+Your detailed answer goes here. You can include multiple paragraphs if needed.
+```
+
+### How to Add a New FAQ
+
+1. Open the `/faqs.md` file
+2. Add a new section with a level 2 heading (##) for your question
+3. Write the answer as paragraph text directly below the heading
+4. Save the file
+
+### Tips for Writing Effective FAQs
+
+- Keep questions concise and clear
+- Start questions with "What", "How", "Why", etc.
+- Provide comprehensive but concise answers
+- Use simple language to make information accessible
+- Group related FAQs together for better organization
+
+### Customizing the FAQ Appearance
+
+The styling for the FAQ section is defined in `assets/css/style.scss`. You can modify:
+
+- Colors: Change the heading colors
+- Spacing: Adjust margins and padding
+- Typography: Modify the font size or weight
+
 ## Adding Blog Posts
 
 This site uses Jekyll's built-in blogging system. To add a new blog post:
