@@ -1,7 +1,7 @@
 title: Data Science Education Portal
 email: vivrd@berkeley.edu
 description: Educational resources for data science students and educators
-baseurl: "/cadatascience.github.io"
+baseurl: ""
 url: "https://ca-datascience.github.io"
 
 # Build settings
