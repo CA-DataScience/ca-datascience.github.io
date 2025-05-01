@@ -25,4 +25,10 @@ layout: page
     <p>Latest articles and tutorials</p>
     <a href="{{ '/blog/' | relative_url }}" class="btn">Read Blog</a>
   </div>
+  
+  <div class="user-card">
+    <h2>FAQs</h2>
+    <p>Common questions about data science</p>
+    <a href="{{ '/faqs/' | relative_url }}" class="btn">View FAQs</a>
+  </div>
 </div>
