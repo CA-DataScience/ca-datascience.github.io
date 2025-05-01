@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 
 <div class="hero">
@@ -18,5 +18,11 @@ layout: home
     <h2>For Educators</h2>
     <p>Teaching materials and curriculum guides</p>
     <a href="{{ '/data-science/?view=educator' | relative_url }}" class="btn">Educator Resources</a>
+  </div>
+  
+  <div class="user-card">
+    <h2>Blog</h2>
+    <p>Latest articles and tutorials</p>
+    <a href="{{ '/blog/' | relative_url }}" class="btn">Read Blog</a>
   </div>
 </div>
