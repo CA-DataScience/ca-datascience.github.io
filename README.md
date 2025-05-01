@@ -50,8 +50,8 @@ After the front matter, write your post content using Markdown. Jekyll supports:
 - Headers (# ## ###)
 - Lists (- or 1. 2. 3.)
 - Code blocks (```python)
-- Links [text](url)
-- Images ![alt text](image-url)
+- Links
+- Images
 
 ### 4. Add Code Snippets (Optional)
 
@@ -90,12 +90,3 @@ Once you're satisfied with your post:
 3. GitHub Pages will automatically deploy your changes
 
 Your post will appear on the Blog page, accessible from the homepage.
-
-## Tips for Good Blog Posts
-
-- Use clear, descriptive titles
-- Include an introduction that explains what the post is about
-- Break content into logical sections with headers
-- Use code examples where appropriate
-- Include a conclusion or summary
-- Keep posts focused on a single topic
