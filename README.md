@@ -22,14 +22,6 @@ Your detailed answer goes here. You can include multiple paragraphs if needed.
 3. Write the answer as paragraph text directly below the heading
 4. Save the file
 
-### Tips for Writing Effective FAQs
-
-- Keep questions concise and clear
-- Start questions with "What", "How", "Why", etc.
-- Provide comprehensive but concise answers
-- Use simple language to make information accessible
-- Group related FAQs together for better organization
-
 ### Customizing the FAQ Appearance
 
 The styling for the FAQ section is defined in `assets/css/style.scss`. You can modify:
