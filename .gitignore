@@ -1,8 +1,28 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-.bundle/
+_site/
+/.quarto/
+/.vscode/
+.DS_Store
 
-**/.claude/settings.local.json
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+**/*.quarto_ipynb

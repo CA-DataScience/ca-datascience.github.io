@@ -1,0 +1,22 @@
+---
+title: "Events & Workshops"
+---
+
+Stay updated on data science education events, workshops, and conferences. This page highlights upcoming opportunities and provides recaps of past events.
+
+## Upcoming Events
+
+*Check back regularly for updates on upcoming workshops and conferences.*
+
+## Recent Event Recaps
+
+### INSPIRE 2024 Workshop Recap
+
+Our most recent major event was the INSPIRE 2024 Conference workshop, where California Learning Lab grantees came together to collaborate on data science education initiatives. [Read the full recap](../posts/2023-10-20-inspire-2024-workshop-recap.qmd) for details about:
+
+- Data science curriculum development discussions
+- Cross-institutional collaboration strategies
+- Assessment and evaluation frameworks
+- Shared teaching materials and resources
+
+*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*

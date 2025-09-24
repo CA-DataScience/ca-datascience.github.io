@@ -1,0 +1,220 @@
+/* Custom styles for Data Science Education Portal */
+
+/* Content styling for sidebar layout */
+.content h1 {
+  color: #1a365d;
+  border-bottom: 2px solid #f58025;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content h2 {
+  color: #1a365d;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content h3 {
+  color: #2d3748;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Improve link styling */
+.content a {
+  color: #f58025;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #e67016;
+  text-decoration: underline;
+}
+
+/* Enhanced list styling */
+.content ul, .content ol {
+  margin-bottom: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Callout boxes for important information */
+.callout {
+  background-color: #f7fafc;
+  border-left: 4px solid #f58025;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Button styling for sidebar layout */
+.btn {
+  display: inline-block;
+  background-color: #f58025;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+.btn:hover {
+  background-color: #e67016;
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Content view styling */
+.content-view h1 {
+  color: #1a365d;
+}
+
+.content-view h2 {
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+/* FAQ and general page styling */
+.page-content h2 {
+  color: #1a365d;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.page-content p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Quarto-specific adjustments */
+.quarto-title-banner {
+  background-color: #1a365d;
+  color: white;
+}
+
+.quarto-title-banner .quarto-title .title {
+  color: white;
+}
+
+.quarto-title-banner .quarto-title .subtitle {
+  color: #e0e0e0;
+}
+
+/* Panel tabset styling */
+.panel-tabset .nav-tabs .nav-link {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+}
+
+.panel-tabset .nav-tabs .nav-link.active {
+  border-bottom: 3px solid #f58025;
+  color: #1a365d;
+  background: none;
+}
+
+/* Blog listing styling */
+.listing-title {
+  color: #1a365d;
+}
+
+.listing-description {
+  color: #666;
+}
+
+.listing-categories .listing-category {
+  background-color: #e2e8f0;
+  color: #4a5568;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  font-weight: 500;
+  border: 1px solid #cbd5e0;
+  transition: all 0.2s ease;
+}
+
+.listing-categories .listing-category:hover {
+  background-color: #cbd5e0;
+  color: #2d3748;
+}
+
+/* Image gallery styling */
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .user-types {
+    grid-template-columns: 1fr;
+  }
+
+  .user-card {
+    height: auto;
+    min-height: 180px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .user-card {
+    padding: 1.5rem;
+    min-height: 160px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Dark theme support */
+[data-bs-theme="dark"] .user-card {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: white;
+}
+
+[data-bs-theme="dark"] .user-card h2 {
+  color: #63b3ed;
+}
+
+/* Additional utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}

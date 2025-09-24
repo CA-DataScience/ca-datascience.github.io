@@ -1,0 +1,49 @@
+---
+title: "About This Portal"
+---
+
+This Data Science Education Portal serves as a comprehensive resource hub for students and educators interested in data science. Our mission is to provide accessible, high-quality educational materials that bridge the gap between theoretical knowledge and practical application.
+
+## Our Approach
+
+We believe in making data science education:
+
+- **Accessible**: Resources are freely available and designed for learners at all levels
+- **Practical**: Content focuses on real-world applications and hands-on learning
+- **Interdisciplinary**: We recognize that data science draws from multiple fields
+- **Ethical**: We emphasize the responsible use of data and consideration of societal impacts
+
+## How to Use This Portal
+
+### For Students
+Navigate to the **"For Students"** section to find:
+- Getting started guides and fundamentals
+- Career path information and guidance
+- Curated learning resources and tutorials
+- Practical examples and case studies
+
+### For Educators
+Explore the **"For Educators"** section for:
+- Teaching materials and curriculum development guides
+- Assessment strategies and project ideas
+- Tools and technology recommendations
+- Community discussions and best practices
+
+### Blog & Updates
+Stay current with:
+- Latest articles and tutorials
+- Workshop recaps and event coverage
+- Trends in data science education
+- Community contributions and insights
+
+## Contact & Collaboration
+
+For questions, feedback, or collaboration opportunities, please reach out to [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).
+
+## Acknowledgments
+
+This portal is supported by the California Learning Lab and builds upon the excellent work of the UC Berkeley data science education community. We are grateful for the contributions of faculty, students, and educators who help make data science education accessible and effective.
+
+## License
+
+The contents of this portal are licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), unless otherwise noted.

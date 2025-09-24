@@ -1,0 +1,50 @@
+---
+title: "Learning Resources"
+---
+
+Curated resources to help you learn data science effectively, from beginner-friendly materials to advanced specializations.
+
+## Books
+
+### Foundational Books
+
+**"Python for Data Analysis" by Wes McKinney**
+- Essential for pandas and Python data manipulation
+- Written by the creator of pandas
+- Great for hands-on learning
+
+**"R for Data Science" by Hadley Wickham & Garrett Grolemund**
+- Comprehensive introduction to R and the tidyverse
+- Excellent for visualization and data wrangling
+- Free online version available
+
+**"The Elements of Statistical Learning" by Hastie, Tibshirani, and Friedman**
+- Comprehensive coverage of statistical learning methods
+- Mathematical rigor with practical applications
+- Free PDF available from authors
+
+### Statistics and Mathematics
+
+**"Think Stats" by Allen B. Downey**
+- Probability and statistics using Python
+- Practical approach with real examples
+- Good for beginners
+
+**"An Introduction to Statistical Learning" by James, Witten, Hastie, and Tibshirani**
+- More accessible than Elements of Statistical Learning
+- R code examples included
+- Free PDF available
+
+### Machine Learning
+
+**"Hands-On Machine Learning" by Aurélien Géron**
+- Practical approach using Scikit-Learn and TensorFlow
+- Good balance of theory and implementation
+- Includes deep learning
+
+**"Pattern Recognition and Machine Learning" by Christopher Bishop**
+- Theoretical foundation of machine learning
+- Mathematical depth
+- Classic reference text
+
+Insert more stuff here, maybe.

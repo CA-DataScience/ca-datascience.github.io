@@ -1,0 +1,59 @@
+---
+title: "Getting Started in Data Science"
+---
+
+Welcome to data science! Whether you're completely new to the field or looking to formalize your knowledge, this section will guide you through the essential concepts, skills, and pathways in data science.
+
+## What is Data Science?
+
+Data science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It combines:
+
+- **Statistics and Mathematics**: The foundation for understanding patterns and relationships in data
+- **Computer Science**: Programming skills and computational thinking
+- **Domain Expertise**: Subject matter knowledge to ask the right questions and interpret results
+- **Communication**: The ability to present findings clearly to diverse audiences
+
+## Why Study Data Science?
+
+Data science skills are increasingly valuable across industries because:
+
+1. **Growing Demand**: Organizations need professionals who can make sense of vast amounts of data
+2. **Versatile Applications**: From healthcare to finance, sports to social media, data science has broad applications
+3. **Problem-Solving Focus**: Data science teaches structured approaches to complex problems
+4. **Career Flexibility**: Skills transfer across industries and roles
+
+## Learning Path Overview
+
+Your data science journey typically follows this progression:
+
+### Foundation (Months 1-3)
+- Programming fundamentals (Python or R)
+- Basic statistics and probability
+- Data manipulation and cleaning
+- Introduction to data visualization
+
+### Intermediate (Months 4-8)
+- Statistical modeling and inference
+- Machine learning basics
+- Advanced data visualization
+- Working with databases (SQL)
+
+### Advanced (Months 9+)
+- Deep learning and neural networks
+- Big data technologies
+- Specialized domains (NLP, computer vision, etc.)
+- Production deployment and ethics
+
+## Getting Started Today
+
+1. **Choose a Programming Language**: Start with Python (more general purpose) or R (more statistical focus)
+2. **Find Practice Datasets**: Explore [Kaggle](https://www.kaggle.com/datasets), [UCI ML Repository](https://archive.ics.uci.edu/), or [Data.gov](https://www.data.gov/)
+3. **Join Communities**: Participate in online forums, local meetups, and study groups
+4. **Build Projects**: Apply your skills to problems you care about
+
+## Next Steps
+
+Explore the other sections to dive deeper:
+- [Data Science Fundamentals](fundamentals.qmd): Core concepts and methodologies
+- [Career Paths](career-paths.qmd): Different roles and opportunities in data science
+- [Learning Resources](resources.qmd): Curated lists of books, courses, and tools

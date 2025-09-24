@@ -1,0 +1,15 @@
+---
+title: "Page Not Found"
+---
+
+The requested page could not be found. Please check the URL or use the sidebar navigation to find what you're looking for.
+
+## Helpful Sections
+
+- **[Home](index.qmd)**: About this portal and how to use it
+- **[For Students](students/index.qmd)**: Getting started with data science
+- **[For Educators](educators/index.qmd)**: Teaching resources and strategies
+- **[Blog & Updates](blog.qmd)**: Latest articles and event coverage
+- **[FAQs](faqs.qmd)**: Common questions about data science
+
+You can also use the search function or browse through the sidebar menu to find the content you need.
