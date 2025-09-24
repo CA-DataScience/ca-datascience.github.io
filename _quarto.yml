@@ -1,0 +1,63 @@
+project:
+  type: website
+
+website:
+  title: "Data Science Education Portal"
+  site-url: "https://ca-datascience.github.io"
+  description: "Educational resources for data science students and educators"
+  favicon: assets/favicon.ico
+  page-navigation: true
+
+  sidebar:
+    style: "docked"
+    title: "Data Science Portal <br><small>Educational Resources</small>"
+    logo: assets/favicon.ico
+    logo-alt: "Data Science Portal logo"
+    collapse-level: 1
+    tools:
+      - icon: github
+        href: https://github.com/ca-datascience/ca-datascience.github.io
+    contents:
+      - href: index.qmd
+        text: "Home / About"
+      - section: "For Students"
+        href: students/index.qmd
+        contents:
+          - href: students/index.qmd
+            text: "Getting Started"
+          - href: students/resources.qmd
+            text: "Learning Resources"
+      - section: "For Educators"
+        href: educators/index.qmd
+        contents:
+          - href: educators/index.qmd
+            text: "Teaching Overview"
+          - href: educators/curriculum.qmd
+            text: "Curriculum Development"
+      - section: "Blog & Updates"
+        href: blog.qmd
+        contents:
+          - href: blog.qmd
+            text: "Latest Posts"
+          - href: blog/events.qmd
+            text: "Events & Workshops"
+      - href: faqs.qmd
+        text: "Frequently Asked Questions"
+
+  page-footer:
+    center:
+      - text: "Home / About"
+        href: index.qmd
+      - text: "GitHub"
+        href: "https://github.com/ca-datascience/ca-datascience.github.io"
+      - text: "Contact"
+        href: "mailto:vivrd@berkeley.edu"
+    background: "dark"
+
+format:
+  html:
+    theme: lumen
+    fontsize: 1em
+    css: assets/styles.css
+    toc: true
+    page-layout: article

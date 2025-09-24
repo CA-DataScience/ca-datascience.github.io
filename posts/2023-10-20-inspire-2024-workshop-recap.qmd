@@ -1,181 +1,177 @@
 ---
-layout: post
-title:  "INSPIRE 2024 Workshop Recap: Building Data Science Pathways Together"
-date:   2023-10-20 10:00:00 -0700
-categories: events workshop data-science
+title: "INSPIRE 2024 Workshop Recap: Building Data Science Pathways Together"
+date: "2023-10-20"
+categories: [events, workshop, data-science, inspire]
+description: "Recap of the INSPIRE 2024 Conference workshop for California Learning Lab grantees"
+author: "Data Science Education Team"
+image: "assets/images/inspire-2024/IMG_3801.png"
 ---
 
 On October 16, 2024, the INSPIRE Conference brought together grantees from the California Learning Lab's Data Science Grand Challenge for an energizing afternoon of connection, collaboration, and shared learning. Designed as an interactive experience, the workshops gave attendees a chance to reflect on the progress of their projects, co-create curriculum ideas, and engage in rich cross-institutional dialogue around building equitable, effective data science pathways.
 
-<style type="text/css">
-.gallery-container {
+## Workshop Photos
+
+```{=html}
+<div class="slideshow-container">
+  <div class="slide active">
+    <img src="../assets/images/inspire-2024/IMG_3801.png" alt="Workshop Image 1">
+  </div>
+  <div class="slide">
+    <img src="../assets/images/inspire-2024/IMG_3802.png" alt="Workshop Image 2">
+  </div>
+  <div class="slide">
+    <img src="../assets/images/inspire-2024/IMG_3804_fixed.png" alt="Workshop Image 3">
+  </div>
+  <div class="slide">
+    <img src="../assets/images/inspire-2024/IMG_3806.png" alt="Workshop Image 4">
+  </div>
+  <div class="slide">
+    <img src="../assets/images/inspire-2024/IMG_3809.png" alt="Workshop Image 5">
+  </div>
+
+  <!-- Navigation arrows -->
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+  <!-- Dots indicator -->
+  <div class="dots-container">
+    <span class="dot active" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</div>
+```
+
+```{=html}
+<style>
+.slideshow-container {
   max-width: 800px;
-  margin: 2em auto;
+  position: relative;
+  margin: 2rem auto;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.gallery-nav {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 1em;
-}
-
-.gallery-nav button {
-  background: #2a7ae2;
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.gallery-nav button:hover {
-  background: #1756a9;
-}
-
-.gallery-image {
+.slide {
   display: none;
   text-align: center;
 }
 
-.gallery-image.active {
+.slide.active {
   display: block;
 }
 
-.gallery-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.gallery-caption {
-  margin-top: 10px;
-  font-style: italic;
-  text-align: center;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
 .dots-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #bbb;
-  margin: 0 5px;
   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
-.dot.active {
-  background: #2a7ae2;
+.dot.active, .dot:hover {
+  background-color: #f58025;
+}
+
+@media (max-width: 600px) {
+  .slide img {
+    height: 250px;
+  }
+
+  .prev, .next {
+    font-size: 14px;
+    padding: 12px;
+  }
 }
 </style>
 
-<div class="gallery-container">
-  <div class="gallery-nav">
-    <button id="prev-btn">Previous</button>
-    <button id="next-btn">Next</button>
-  </div>
-  
-  <div id="gallery">
-    <div class="gallery-image active" data-index="1">
-      <img src="/assets/images/inspire-2024/IMG_3801.png" alt="INSPIRE Workshop Image 1">
-      <div class="gallery-caption">INSPIRE Workshop 2024 - Group Discussion</div>
-    </div>
-    
-    <div class="gallery-image" data-index="2">
-      <img src="/assets/images/inspire-2024/IMG_3802.png" alt="INSPIRE Workshop Image 2">
-      <div class="gallery-caption">INSPIRE Workshop 2024 - Presentation Session</div>
-    </div>
-    
-    <div class="gallery-image" data-index="3">
-      <img src="/assets/images/inspire-2024/IMG_3804_fixed.png" alt="INSPIRE Workshop Image 3">
-      <div class="gallery-caption">INSPIRE Workshop 2024 - Collaboration Activity</div>
-    </div>
-    
-    <div class="gallery-image" data-index="4">
-      <img src="/assets/images/inspire-2024/IMG_3806.png" alt="INSPIRE Workshop Image 4">
-      <div class="gallery-caption">INSPIRE Workshop 2024 - Team Planning</div>
-    </div>
-    
-    <div class="gallery-image" data-index="5">
-      <img src="/assets/images/inspire-2024/IMG_3809.png" alt="INSPIRE Workshop Image 5">
-      <div class="gallery-caption">INSPIRE Workshop 2024 - Keynote Presentation</div>
-    </div>
-  </div>
-  
-  <div class="dots-container">
-    <span class="dot active" data-index="1"></span>
-    <span class="dot" data-index="2"></span>
-    <span class="dot" data-index="3"></span>
-    <span class="dot" data-index="4"></span>
-    <span class="dot" data-index="5"></span>
-  </div>
-</div>
-
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const galleryImages = document.querySelectorAll('.gallery-image');
-  const dots = document.querySelectorAll('.dot');
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  
-  let currentIndex = 1;
-  
-  // Initialize first image
-  showImage(currentIndex);
-  
-  // Previous button
-  prevBtn.addEventListener('click', function() {
-    currentIndex = currentIndex === 1 ? galleryImages.length : currentIndex - 1;
-    showImage(currentIndex);
-  });
-  
-  // Next button
-  nextBtn.addEventListener('click', function() {
-    currentIndex = currentIndex === galleryImages.length ? 1 : currentIndex + 1;
-    showImage(currentIndex);
-  });
-  
-  // Dot navigation
-  dots.forEach(dot => {
-    dot.addEventListener('click', function() {
-      const index = parseInt(this.getAttribute('data-index'));
-      currentIndex = index;
-      showImage(currentIndex);
-    });
-  });
-  
-  function showImage(index) {
-    // Hide all images
-    galleryImages.forEach(image => {
-      image.classList.remove('active');
-    });
-    
-    // Remove active class from all dots
-    dots.forEach(dot => {
-      dot.classList.remove('active');
-    });
-    
-    // Show selected image
-    document.querySelector(`.gallery-image[data-index="${index}"]`).classList.add('active');
-    
-    // Highlight selected dot
-    document.querySelector(`.dot[data-index="${index}"]`).classList.add('active');
+let slideIndex = 1;
+
+function changeSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+  let slides = document.querySelectorAll('.slide');
+  let dots = document.querySelectorAll('.dot');
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  slides.forEach(slide => slide.classList.remove('active'));
+  dots.forEach(dot => dot.classList.remove('active'));
+
+  if (slides[slideIndex-1]) {
+    slides[slideIndex-1].classList.add('active');
   }
+  if (dots[slideIndex-1]) {
+    dots[slideIndex-1].classList.add('active');
+  }
+}
+
+// Initialize slideshow when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  showSlide(slideIndex);
 });
 </script>
+```
+
+## Keynote: Data Science Higher Education Knowledge Areas
 
 The event began with a keynote by Ray Levy who serves as the Executive Director for Data Science and AI Academy at North Carolina State University. She kicked off the session by inviting participants to reflect on the evolving landscape of data science education. In an interactive activity, attendees contributed to shaping Data Science Higher Education Knowledge Areas, responding to the following thought-provoking questions:
 
 * Why do we teach these topics in data science (or not)?
 * Are they really core and common across the foundational disciplines as we create this new interdisciplinary discipline?
 * Do you think of these topics as ones that all data science students should take, topics that students might see in a concentration, or topics that would likely be electives?
-
-Here's the document with participant feedback: [Data Science Higher Education Knowledge Areas](#)
 
 Ray's facilitation provided a national perspective on efforts to standardize data science education and invited feedback on how institutions across California are interpreting and implementing foundational content in diverse ways.
 
@@ -193,8 +189,6 @@ This session kicked off with a discussion on what's currently being taught in in
 
 This session helped highlight both shared foundations and the variety of approaches taken across institutions—sparking ideas for better alignment and innovation.
 
-[Session 1 Notes](#)
-
 ## Session 2: Metrics and Evaluation – Harmonizing Impact
 
 In this session, participants shifted focus to evaluation, breaking into themed groups to discuss outcomes through the lenses of:
@@ -207,8 +201,6 @@ Using an Alignment Spreadsheet, groups worked to surface common indicators and c
 
 > "The session to review outcomes for students, instructors, and institutions was especially useful."
 
-[Session 2 Notes](#)
-
 ## Session 3: Showcase Materials – Sharing What Works
 
 The final workshop was a "show and tell" of instructional materials submitted by projects throughout the year. This open session created space to celebrate creativity, excellence, and collaboration among grantees. Attendees discussed:
@@ -220,8 +212,9 @@ The final workshop was a "show and tell" of instructional materials submitted by
 > "The cohort coordination team did a fantastic job designing engaging activities that made the afternoon interactive."
 
 **Session 3: Materials shared:**
+
 * Skyline Slides - with Flyers
-* LACC Slides with Flyers 
+* LACC Slides with Flyers
 * CSUEB Syllabus with Design
 * Cal Poly Humboldt: Climate Justice Presentation
 * CSU Fullerton: PIPELINE Workshops
@@ -238,14 +231,10 @@ The energy and insight shared at INSPIRE reaffirmed Learning Lab's commitment to
 
 We look forward to building on this momentum. If you haven't already, check out the shared assets folder, and stay tuned for more opportunities to connect!
 
-**Resources:**
-* [Presentation](#)
-* [Ray Levy: Data Science Higher Education Knowledge Areas](#)
-* [Session 1 Notes](#)
-* [Session 2 Notes](#)
-* [Session 3: Materials shared folder](#)
-  * Skyline Slides - with Flyers
-  * LACC Slides with Flyers 
-  * CSUEB Syllabus with Design
-  * Cal Poly Humboldt: Climate Justice Presentation
-  * CSU Fullerton: PIPELINE Workshops
+## Key Takeaways
+
+1. **Collaboration is Essential**: Cross-institutional partnerships strengthen data science education
+2. **Standardization with Flexibility**: Need for common frameworks while allowing institutional adaptation
+3. **Student-Centered Approach**: Focus on student outcomes across different types of institutions
+4. **Continuous Innovation**: Sharing materials and best practices drives improvement
+5. **Community Building**: Regular convening creates momentum for systemic change

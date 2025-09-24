@@ -1,0 +1,26 @@
+---
+title: "Blog & Updates"
+listing:
+  contents: "posts"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+Welcome to our blog! Here you'll find the latest articles, tutorials, and insights about data science education, trends, and best practices. We cover topics relevant to both students learning data science and educators teaching it.
+
+## Recent Topics
+
+Our recent posts have covered:
+
+- **Getting Started Guides**: Fundamental concepts and learning pathways
+- **Tutorial Series**: Step-by-step guides for specific techniques and tools
+- **Event Coverage**: Recaps of workshops, conferences, and community gatherings
+- **Industry Insights**: Trends and developments in data science education
+- **Best Practices**: Teaching strategies and learning methodologies
+
+## Contributing
+
+We welcome contributions from the data science education community! If you're interested in writing for our blog, please reach out to [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).

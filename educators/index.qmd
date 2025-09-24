@@ -1,0 +1,14 @@
+---
+title: "Teaching Data Science: An Overview"
+---
+
+Teaching data science effectively requires balancing theoretical foundations with practical applications, accommodating diverse backgrounds, and preparing students for rapidly evolving careers. This section provides guidance for educators at all levels.
+
+## Resources for Getting Started
+
+### Curriculum Development
+- **Data Science Education Community**: Connect with other educators
+- **Carpentries Workshops**: Training in computational and data skills
+- **NASEM Report**: "Data Science for Undergraduates" provides comprehensive guidance
+
+Insert more stuff here, maybe.
