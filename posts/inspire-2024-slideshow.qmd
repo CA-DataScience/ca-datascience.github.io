@@ -1,0 +1,22 @@
+---
+title: "INSPIRE 2024 Workshop Photos"
+listing: false
+format:
+  revealjs:
+    theme: simple
+    controls: true
+    progress: false
+    center: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="../assets/images/inspire-2024/IMG_3801.png" background-size="contain"}
+
+## {background-image="../assets/images/inspire-2024/IMG_3802.png" background-size="contain"}
+
+## {background-image="../assets/images/inspire-2024/IMG_3804_fixed.png" background-size="contain"}
+
+## {background-image="../assets/images/inspire-2024/IMG_3806.png" background-size="contain"}
+
+## {background-image="../assets/images/inspire-2024/IMG_3809.png" background-size="contain"}
