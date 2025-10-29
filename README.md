@@ -83,8 +83,7 @@ The site is organized into several main sections:
 - `students/resources.qmd` - Curated learning resources, tools, and pathways
 
 ### **For Educators** (`educators/`)
-- `educators/index.qmd` - Teaching overview and best practices
-- `educators/curriculum.qmd` - Curriculum development resources and frameworks
+- `educators/index.qmd` - Open educational resources and teaching materials
 
 ### **Blog & Updates** (`blog.qmd`, `posts/`)
 - `blog.qmd` - Main blog listing page showing all posts
@@ -243,8 +242,7 @@ ca-datascience.github.io/
 │   ├── index.qmd
 │   └── resources.qmd
 ├── educators/               # Educator resources section
-│   ├── index.qmd
-│   └── curriculum.qmd
+│   └── index.qmd
 ├── blog/                    # Blog subsections
 │   └── events.qmd
 ├── posts/                   # Individual blog posts

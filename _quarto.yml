@@ -31,9 +31,7 @@ website:
         href: educators/index.qmd
         contents:
           - href: educators/index.qmd
-            text: "Teaching Overview"
-          - href: educators/curriculum.qmd
-            text: "Curriculum Development"
+            text: "Teaching Resources"
       - section: "Blog & Updates"
         href: blog.qmd
         contents:

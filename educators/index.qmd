@@ -1,14 +1,96 @@
 ---
-title: "Teaching Data Science: An Overview"
+title: "Teaching Data Science: Resources for Educators"
 ---
 
-Teaching data science effectively requires balancing theoretical foundations with practical applications, accommodating diverse backgrounds, and preparing students for rapidly evolving careers. This section provides guidance for educators at all levels.
+Teaching data science effectively requires balancing theoretical foundations with practical applications, accommodating diverse backgrounds, and preparing students for rapidly evolving careers. This section provides guidance and resources for educators at all levels.
 
-## Resources for Getting Started
+## Open Educational Resources (OER)
 
-### Curriculum Development
-- **Data Science Education Community**: Connect with other educators
-- **Carpentries Workshops**: Training in computational and data skills
-- **NASEM Report**: "Data Science for Undergraduates" provides comprehensive guidance
+**What is OER?**
 
-Insert more stuff here, maybe.
+Open Educational Resources (OER) are teaching and learning materials that are freely available for anyone to use, adapt, and share. These resources include textbooks, course materials, assignments, and multimedia content that are released under open licenses. OER save students and faculty time and money while enabling instructors to customize materials to fit their specific teaching needs.
+
+### CARLE - Curated Asset Repository for Learning Excellence
+
+CARLE is a collection of over 600 open educational resources created by faculty at California Community Colleges, California State University, and University of California as part of Learning Lab-funded projects. Resources range from Canvas courses and custom-built online courseware to lecture notes, class exercises, worksheets, and journal articles, with most currently focused on STEM disciplines.
+
+Ready-to-share materials save faculty and students time and money, and content may be used as-is or adapted to individual instructor needs depending on the open source license.
+
+**[Explore CARLE →](https://calearninglab.org/about-CARLE/)**
+
+---
+
+## Data 8 Resources
+
+UC Berkeley's Foundations of Data Science course (Data 8) combines three perspectives: inferential thinking, computational thinking, and real-world relevance, teaching critical concepts in computer programming and statistical inference through hands-on analysis of real-world datasets. The course is designed for entry-level students from any major who have not previously taken statistics or computer science courses.
+
+All Data 8 materials are openly available for adoption and adaptation:
+
+### Key Resources:
+
+- **[Data 8 Main Website](http://www.data8.org/)** - Access the free online textbook with interactive Jupyter notebooks, all assignments in the Data 8 GitHub Organization, and all lecture videos, slides, and demonstration notebooks from Fall 2016 to current iterations.
+
+- **[Computational and Inferential Thinking Textbook](https://inferentialthinking.com/)** - The free online textbook includes interactive Jupyter notebooks and public data sets for all examples. Written by Ani Adhikari and John Denero.
+
+- **[Zero to Data 8 Guide](http://www.data8.org/zero-to-data-8/)** - A comprehensive guide on pedagogical methods and how to set up course infrastructure for those who wish to adopt an introductory data science course at their university.
+
+- **[Data 8 GitHub Organization](https://github.com/data-8)** - Houses the textbook, assignments, exams, websites for Data 8, and the datascience package, with over 110 repositories available.
+
+- **[Data 8X on edX](https://www.edx.org/professional-certificate/berkeleyx-foundations-of-data-science)** - A three-part Foundations of Data Science Professional Certificate Program available digitally and self-paced.
+
+- **[Data 8 Adoption Resources](https://cdss.berkeley.edu/dsus/educationalpartners/data8-adoption)** - Includes public repositories with Jupyter notebooks for homeworks, labs, and lectures, plus an interest form for accessing sensitive content like solutions, private tests, worksheets, and lecture slides.
+
+---
+
+## CourseKata
+
+CourseKata is an interactive online textbook for teaching introductory statistics and data science, organized around the concept of statistical modeling and the practice of data analysis. Developed by professors from UCLA and Cal State LA starting in 2017 as a project to modernize the teaching of introductory statistics in California's public institutions of higher education.
+
+### Key Features:
+
+- Emphasizes computational methods like simulation, randomization, and bootstrapping instead of formulas and mathematical derivations, making it accessible to all students regardless of mathematical preparation.
+- Includes more than 1,500 formative assessment questions with students learning to program and analyze data using R through exercises interleaved throughout the online book.
+- Teacher interface provides real-time access to students' thinking and progress, with fully-hosted integration of Jupyter Notebooks for structuring in-class activities and authentic assessments.
+- Seamlessly fits into an educator's LMS flow.
+
+CourseKata offers three versions for college: Introductory Statistics with R (includes gentle R introduction, data visualization, statistical modeling, and simulation-based inference), Accelerated Statistics with R (faster-paced version), and Advanced Statistics with R.
+
+**[Learn More About CourseKata →](https://www.coursekata.org/)**
+
+---
+
+## Cal-ICOR - California Interactive Computing Open Resource
+
+Cal-ICOR revolutionizes data science education across California's public higher education institutions by providing equitable, cloud-based access to Jupyter notebooks and comprehensive instructor support. UC Berkeley received a $1.5 million grant from California Education Learning Lab to launch this computing technology hub, which aims to serve over 5,000 students by 2027 with potential to expand to 50,000 students.
+
+### What Cal-ICOR Provides:
+
+**Computing Infrastructure** - A scalable, user-friendly JupyterHub platform that eliminates technical and financial barriers for institutions and students. The platform streamlines access to coursework and eliminates barriers like expensive software and hardware limitations, allowing students from all backgrounds to engage with advanced STEM content.
+
+**Content Library** - The Cal-ICOR Modules Showcase serves as an interactive resource for courses across various disciplines, leveraging Jupyter Notebooks to provide hands-on, code-driven explanations of key concepts in data science, economics, environmental science, and more.
+
+Available modules span: Environmental Science, Engineering, Ethnic Studies, Anthropology, Data Science, Psychology, Cognitive Science, Political Science, and Legal Studies.
+
+**Instructor Support** - Comprehensive training workshops and support, focusing on content creation, customization, and inclusive teaching practices.
+
+### Key Links:
+
+- **[Cal-ICOR Main Website](https://cal-icor.org/)**
+- **[Cal-ICOR Modules Showcase](https://cal-icor.github.io/textbook/intro.html)**
+- **[Cal-ICOR JupyterHub](https://jupyter.cal-icor.org)**
+
+### Partners:
+
+Cal-ICOR collaborates with a network of public higher education institutions across California, including community colleges, CSUs, and UCs, with key partners including City College of San Francisco, Santa Barbara City College, and California State University, Long Beach.
+
+---
+
+## Getting Started
+
+These resources work together to support data science education across California:
+
+- **Need curriculum materials?** Start with CARLE to explore existing resources, or adopt Data 8 or CourseKata curriculum
+- **Need computing infrastructure?** Cal-ICOR provides cloud-based Jupyter access for your students
+- **Want training and support?** All resources connect you to professional development and a community of practice
+
+For questions about any of these resources, contact **ds-help@berkeley.edu**
