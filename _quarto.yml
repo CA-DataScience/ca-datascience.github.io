@@ -7,6 +7,7 @@ website:
   description: "Educational resources for data science students and educators"
   favicon: assets/favicon.ico
   page-navigation: true
+  google-analytics:"G-F20VGBSBWJ"
 
   sidebar:
     style: "docked"
