@@ -15,7 +15,7 @@ jobs:
         with:
           version: "1.8.26"
 
-      - ame: Render Quarto Project and Capture Accessibility Report
+      - name: Render Quarto Project and Capture Accessibility Report
         id: render_capture
         # redirect the stdout of the quarto render command to a file.
         # i'm not sure if --quiet will suppress the axe output we want,
