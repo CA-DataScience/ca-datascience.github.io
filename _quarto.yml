@@ -62,6 +62,6 @@ format:
     page-layout: article
     axe:
       output: json 
-      report-path: ./_site/axe-report.json
+      report-path: axe-report.json
       tags:
         - wcag21aa
