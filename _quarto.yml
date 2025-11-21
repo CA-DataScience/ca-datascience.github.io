@@ -61,7 +61,7 @@ format:
     toc: true
     page-layout: article
     axe:
-      output: file 
+      output: json 
       report-path: axe-report.json
       tags:
         - wcag21aa
