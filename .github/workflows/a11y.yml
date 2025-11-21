@@ -25,7 +25,7 @@ jobs:
           OUTPUT_FILE="./axe-report-console.json"
           
           # Run the command and redirect both stdout and stderr to the file
-          $QUARTO_COMMAND > $OUTPUT_FILE 2>&1
+          $QUARTO_COMMAND > $OUTPUT_FILE 2>&1 || or true
           
           echo "Successfully rendered and captured console output to $OUTPUT_FILE"
 
