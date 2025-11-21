@@ -15,39 +15,55 @@ jobs:
         with:
           version: "1.8.26"
 
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: .
+      - ame: Render Quarto Project and Capture Accessibility Report
+        id: render_capture
+        # redirect the stdout of the quarto render command to a file.
+        # i'm not sure if --quiet will suppress the axe output we want,
+        # so test and adjust as needed.
+        run: |
+          QUARTO_COMMAND="quarto render --quiet ."
+          OUTPUT_FILE="./axe-report-console.json"
+          
+          # Run the command and redirect stdout to the file
+          $QUARTO_COMMAND > $OUTPUT_FILE
+          
+          echo "Successfully rendered and captured console output to $OUTPUT_FILE"
 
       - name: 🚨 Check Accessibility Report for Failures
         id: axe_check
         run: |
+          REPORT_FILE="./axe-report-console.json"
+
           # 1. Check if the report file exists
-          if [ ! -f "_site/axe-report.json" ]; then
-            echo "::error::Accessibility report file not found! Check Quarto render output."
+          if [ ! -f "$REPORT_FILE" ]; then
+            echo "::error::Accessibility report file not found! Render/Capture likely failed."
             exit 1
           fi
 
           # 2. Use 'jq' to count the number of critical/serious violations
-          # Quarto reports *all* violations, so we filter down to 'critical' and 'serious' severity
-          VIOLATION_COUNT=$(jq '[.violations[] | select(.impact == "critical" or .impact == "serious")] | length' _site/axe-report.json)
+          # We check the length of the 'violations' array.
+          VIOLATION_COUNT=$(jq '.violations | length' $REPORT_FILE)
           
-          echo "Found $VIOLATION_COUNT critical/serious accessibility violations."
+          echo "Found $VIOLATION_COUNT accessibility violations."
 
           # 3. Fail the step if any violations were found
           if [ "$VIOLATION_COUNT" -gt 0 ]; then
-            echo "::error::Accessibility check failed! Found $VIOLATION_COUNT critical/serious violations."
-            echo "::error::Please fix violations reported in _site/axe-report.json before merging."
+            echo "::error::Accessibility check failed! Found $VIOLATION_COUNT violations."
             # Set the status code to 1 to fail the job
             exit 1
           else
-            echo "✅ Accessibility check passed (no critical or serious violations found)."
+            echo "✅ Accessibility check passed (no violations found)."
           fi
 
       - name: Upload preview artifact
+        # The report file is now in the root of the workspace, not _site. 
+        # Uploading the whole _site is still correct, but we might want to upload
+        # the JSON report separately for debugging if needed.
+        # For this setup, we stick to uploading _site.
         uses: actions/upload-artifact@v4
         with:
           name: pr-preview-site
-          path: ./_site
+          path: |
+            ./_site
+            ./axe-report-console.json
           retention-days: 7
