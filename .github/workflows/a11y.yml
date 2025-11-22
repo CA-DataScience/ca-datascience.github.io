@@ -44,9 +44,24 @@ jobs:
       - name: Run Accessibility Scan
         id: axe-scan
         run: |
-          # --exit flag will automatically fail the job if violations are found
-          # We save the report to analyze later
-          axe http://localhost:3000 \
+          # 1. Read sitemap.xml
+          # 2. Extract content between <loc> tags
+          # 3. Replace production domain with localhost:3000
+          # 4. Convert newlines to spaces for the Axe command
+          
+          # match 'site-url' in _quarto.yml
+          PRODUCTION_URL="https://ca-datascience.github.io"
+          
+          URLS=$(cat _site/sitemap.xml | \
+            sed -n 's/.*<loc>\(.*\)<\/loc>.*/\1/p' | \
+            sed "s|$PRODUCTION_URL|http://localhost:3000|" | \
+            tr '\n' ' ')
+
+          echo "Detected pages from sitemap:"
+          echo "$URLS"
+
+          # Run Axe
+          axe $URLS \
             --tags wcag21aa \
             --save axe-report.json \
             --exit
