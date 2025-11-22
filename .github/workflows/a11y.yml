@@ -1,0 +1,60 @@
+name: Accessibility Check
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  axe-audit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout Code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+      
+      # 3. Setup Node.js (for Axe and http-server)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 4. Render the Site
+      - name: Render Quarto Site
+        run: quarto render
+
+      # 5. Install Tools
+      - name: Install Axe and Server
+        run: npm install -g @axe-core/cli http-server
+
+      # 6. Start Local Server (Background Process)
+      - name: Start Local Server
+        run: |
+          # Start server on port 3000, silence output, run in background (&)
+          npx http-server ./_site -p 3000 > /dev/null 2>&1 &
+          
+          # Wait 5 seconds to ensure server is ready
+          sleep 5
+
+      # 7. Run Axe Scan
+      - name: Run Accessibility Scan
+        id: axe-scan
+        run: |
+          # --exit flag will automatically fail the job if violations are found
+          # We save the report to analyze later
+          axe http://localhost:3000 \
+            --tags wcag21aa \
+            --save axe-report.json \
+            --exit
+
+      # 8. Upload Report (Runs even if Step 7 fails)
+      - name: Upload Accessibility Report
+        if: always() 
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-report
+          path: axe-report.json
