@@ -27,6 +27,17 @@ jobs:
           
           echo "Successfully rendered and captured console output to $OUTPUT_FILE"
 
+      - name: Upload Axe Report
+        # The report file is now in the root of the workspace, not _site. 
+        # Uploading the whole _site is still correct, but we might want to upload
+        # the JSON report separately for debugging if needed.
+        # For this setup, we stick to uploading _site.
+        uses: actions/upload-artifact@v4
+        with:
+          name: axe-report
+          path: ./axe-report-console.json
+          retention-days: 7
+
       - name: 🚨 Check Accessibility Report for Failures
         id: axe_check
         run: |
@@ -54,14 +65,8 @@ jobs:
           fi
 
       - name: Upload preview artifact
-        # The report file is now in the root of the workspace, not _site. 
-        # Uploading the whole _site is still correct, but we might want to upload
-        # the JSON report separately for debugging if needed.
-        # For this setup, we stick to uploading _site.
         uses: actions/upload-artifact@v4
         with:
           name: pr-preview-site
-          path: |
-            ./_site
-            ./axe-report-console.json
+          path: ./_site
           retention-days: 7
