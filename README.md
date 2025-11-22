@@ -1,6 +1,6 @@
 # Data Science Education Portal
 
-[![Deploy Status](https://github.com/ca-datascience/ca-datascience.github.io/actions/workflows/quarto-publish.yml/badge.svg)](https://github.com/ca-datascience/ca-datascience.github.io/actions/workflows/quarto-publish.yml)
+[![Deploy Status](https://github.com/ca-datascience/ca-datascience.github.io/actions/workflows/quarto-publish.yml/badge.svg)](https://github.com/ca-datascience/ca-datascience.github.io/actions/workflows/quarto-publish.yml) [![Accessibility Check](https://github.com/CA-DataScience/ca-datascience.github.io/actions/workflows/a11y.yml/badge.svg)](https://github.com/CA-DataScience/ca-datascience.github.io/actions/workflows/a11y.yml)
 
 A Quarto-based website providing educational resources, curriculum guidance, and community updates for data science students and educators in California.
 
