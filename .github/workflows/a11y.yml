@@ -62,7 +62,7 @@ jobs:
 
           # Run Axe
           axe $URLS \
-            --tags wcag21aa \
+            --tags wcag2aa,wcag21aa,best-practice \
             --save axe-report.json \
             --exit
 
