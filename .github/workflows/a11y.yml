@@ -18,10 +18,8 @@ jobs:
       - name: Render Quarto Project and Capture Accessibility Report
         id: render_capture
         # redirect the stdout of the quarto render command to a file.
-        # i'm not sure if --quiet will suppress the axe output we want,
-        # so test and adjust as needed.
         run: |
-          QUARTO_COMMAND="quarto render --quiet ."
+          QUARTO_COMMAND="quarto render ."
           OUTPUT_FILE="./axe-report-console.json"
           
           # Run the command and redirect both stdout and stderr to the file
