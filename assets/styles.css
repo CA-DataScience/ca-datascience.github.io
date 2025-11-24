@@ -218,3 +218,7 @@ figcaption {
 .mt-4 {
   margin-top: 2rem;
 }
+
+.blockquote {
+  color: 656F7B !important;
+}

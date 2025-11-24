@@ -55,7 +55,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: cosmos
     fontsize: 1em
     css: assets/styles.css
     toc: true
