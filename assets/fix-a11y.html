@@ -1,0 +1,11 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 1. Find the secondary navigation (Sidebar)
+    var sidebar = document.querySelector('.quarto-secondary-nav');
+    
+    // 2. Add a unique label if it exists
+    if (sidebar) {
+      sidebar.setAttribute('aria-label', 'Secondary Navigation');
+    }
+  });
+</script>
