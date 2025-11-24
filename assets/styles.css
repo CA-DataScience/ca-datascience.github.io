@@ -222,3 +222,16 @@ figcaption {
 .blockquote {
   color: 656F7B !important;
 }
+
+/* container shape and background */
+.quarto-category {
+    background-color: #e2e8f0 !important;
+    color: #4a5568 !important; 
+    border: none !important;
+}
+
+/* text color of the link */
+.quarto-category a {
+    color: #4a5568 !important; 
+    text-decoration: none; 
+}
