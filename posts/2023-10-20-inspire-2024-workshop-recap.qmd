@@ -114,7 +114,7 @@ On October 16, 2024, the INSPIRE Conference brought together grantees from the C
 }
 
 .dot.active, .dot:hover {
-  background-color: #f58025;
+  background-color: #AA4E08;
 }
 
 @media (max-width: 600px) {
