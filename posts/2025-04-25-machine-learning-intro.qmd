@@ -4,6 +4,8 @@ date: "2025-04-25"
 categories: [machine-learning, ai, tutorials]
 description: "Key concepts in machine learning for beginners"
 author: "Data Science Education Team"
+image: "../assets/favicon.ico"
+image-alt: "Placeholder image for Data Science Fundamentals blog post"
 ---
 
 Machine Learning (ML) is a subset of artificial intelligence that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. This post introduces key concepts in machine learning.
