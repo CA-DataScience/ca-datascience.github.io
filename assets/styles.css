@@ -22,12 +22,12 @@
 
 /* Improve link styling */
 .content a {
-  color: #AA4E08;
+  color: #B45308;
   text-decoration: none;
 }
 
 .content a:hover {
-  color: #AA4E08;
+  color: #B45308;
   text-decoration: underline;
 }
 
