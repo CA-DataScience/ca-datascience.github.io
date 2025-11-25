@@ -22,12 +22,12 @@
 
 /* Improve link styling */
 .content a {
-  color: #f58025;
+  color: #B45308;
   text-decoration: none;
 }
 
 .content a:hover {
-  color: #e67016;
+  color: #B45308;
   text-decoration: underline;
 }
 
@@ -132,8 +132,8 @@
 }
 
 .listing-categories .listing-category {
-  background-color: #e2e8f0;
-  color: #4a5568;
+  background-color: #e2e8f0 !important;
+  color: #4a5568 !important;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -217,4 +217,21 @@ figcaption {
 
 .mt-4 {
   margin-top: 2rem;
+}
+
+.blockquote {
+  color: 656F7B !important;
+}
+
+html body .quarto-category a, 
+html body .quarto-category a:visited, 
+html body .quarto-category a:hover, 
+html body .quarto-category a:active {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+.quarto-category {
+    background-color: #e2e8f0 !important;
+    border: none !important;
 }

@@ -4,6 +4,8 @@ date: "2025-10-17"
 categories: [nwdse, ai, workshop]
 description: "AI Day at NWDSE"
 author: "Christiana Kang, Kseniya Usovich"
+image: "../assets/images/inspire-2024/AI-Day-First-Panel.png"
+image-alt: "NWDSE AI Day Thumbnail Image"
 ---
 
 On June 24, the 2025 National Workshop on Data Science Education (NWDSE) devoted a full day to exploring artificial intelligence in the classroom. Organized at UC Berkeley’s Banatao Auditorium, there are five sessions that  brought together educators, researchers, and technology leaders to discuss how AI intersects with teaching, data science, and the future of learning.
@@ -13,7 +15,7 @@ On June 24, the 2025 National Workshop on Data Science Education (NWDSE) devoted
 
 
 
-![Event Photo](../assets/images/inspire-2024/AI-Day-First-Panel.png){fig-align="center" width="80%"}
+![](../assets/images/inspire-2024/AI-Day-First-Panel.png){fig-align="center" width="80%" fig-alt="The first panel at NWDSE 2025 AI day."}
 
 Speakers: Narges Norouzi (Associate Teaching Professor in the Department of Electrical Engineering and Computer Sciences at UC Berkeley), Vinitra Swamy (CEO and co-founder of Schole.ai), Jenae Cohn (Executive Director of UC Berkeley Center for Teaching and Learning), Zach Pardos (Associate Professor of Education at UC Berkeley)
 
@@ -48,4 +50,4 @@ Moderator: Meredith M. Lee (Head of strategic partnerships at CDSS)
 
 The closing session featured Jennifer Chayes and Safiya Noble in a moderated discussion by Meredith Lee. The conversation underscored critical thinking, interdisciplinary education, and the importance of open systems that broaden access to and participation in AI. If you’re interested in this discussion, read the full recap: ["Conversation at UC Berkeley workshop shares perspectives on AI and humanity"](https://cdss.berkeley.edu/news/conversation-uc-berkeley-workshop-shares-perspectives-ai-and-humanity)
 
-![Event Photo](../assets/images/inspire-2024/AI-Day-Group-Photo.png){fig-align="center" width="80%"}
+![](../assets/images/inspire-2024/AI-Day-Group-Photo.png){fig-align="center" width="80%" fig-alt="Group Photo of NWDSE attendees"}

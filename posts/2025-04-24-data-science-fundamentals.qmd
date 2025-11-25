@@ -4,6 +4,8 @@ date: "2025-04-24"
 categories: [tutorials, basics]
 description: "Core components that make up the foundation of data science"
 author: "Data Science Education Team"
+image: "../assets/favicon.ico"
+image-alt: "Placeholder image for Data Science Fundamentals blog post"
 ---
 
 Data Science combines multiple fields, including statistics, scientific methods, and data analysis, to extract value from data. This post explores the core components that make up the foundation of data science.

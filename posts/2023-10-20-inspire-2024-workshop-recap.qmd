@@ -4,7 +4,8 @@ date: "2023-10-20"
 categories: [events, workshop, data-science, inspire]
 description: "Recap of the INSPIRE 2024 Conference workshop for California Learning Lab grantees"
 author: "Data Science Education Team"
-image: "assets/images/inspire-2024/IMG_3801.png"
+image: "../assets/images/inspire-2024/IMG_3801.png"
+image-alt: "INSPIRE 2024 Thumbnail Image"
 ---
 
 On October 16, 2024, the INSPIRE Conference brought together grantees from the California Learning Lab's Data Science Grand Challenge for an energizing afternoon of connection, collaboration, and shared learning. Designed as an interactive experience, the workshops gave attendees a chance to reflect on the progress of their projects, co-create curriculum ideas, and engage in rich cross-institutional dialogue around building equitable, effective data science pathways.
@@ -114,7 +115,7 @@ On October 16, 2024, the INSPIRE Conference brought together grantees from the C
 }
 
 .dot.active, .dot:hover {
-  background-color: #f58025;
+  background-color: #AA4E08;
 }
 
 @media (max-width: 600px) {
