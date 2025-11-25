@@ -15,7 +15,7 @@ On June 24, the 2025 National Workshop on Data Science Education (NWDSE) devoted
 
 
 
-![](../assets/images/inspire-2024/AI-Day-First-Panel.png){fig-align="center" width="80%" alt-alt="The first panel at NWDSE 2025 AI day."}
+![](../assets/images/inspire-2024/AI-Day-First-Panel.png){fig-align="center" width="80%" fig-alt="The first panel at NWDSE 2025 AI day."}
 
 Speakers: Narges Norouzi (Associate Teaching Professor in the Department of Electrical Engineering and Computer Sciences at UC Berkeley), Vinitra Swamy (CEO and co-founder of Schole.ai), Jenae Cohn (Executive Director of UC Berkeley Center for Teaching and Learning), Zach Pardos (Associate Professor of Education at UC Berkeley)
 
