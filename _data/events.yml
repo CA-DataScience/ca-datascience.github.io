@@ -1,0 +1,10 @@
+events:
+  - time: 9 AM - 5 PM
+    featured: false
+    date: 2025-12-10
+    end_date: 2025-12-11
+    location: Virtual
+    title: Testing event
+    link: ""
+    description: This should show up
+    category: workshop
