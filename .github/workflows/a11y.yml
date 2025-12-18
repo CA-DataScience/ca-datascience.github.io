@@ -13,17 +13,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Setup Quarto
+      # 2. Setup Python (for events calendar)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter pyyaml
+
+      # 3. Setup Quarto
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      
-      # 3. Setup Node.js (for Axe and http-server)
+
+      # 4. Setup Node.js (for Axe and http-server)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # 4. Render the Site
+      # 5. Render the Site
       - name: Render Quarto Site
         run: quarto render
 
