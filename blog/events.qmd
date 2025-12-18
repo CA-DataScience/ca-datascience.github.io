@@ -183,6 +183,12 @@ document.addEventListener('DOMContentLoaded', function() {{
   }});
 
   calendar.render();
+
+  // Add aria-labels to FullCalendar chevron icons for accessibility
+  var prevIcon = document.querySelector('.fc-icon-chevron-left');
+  var nextIcon = document.querySelector('.fc-icon-chevron-right');
+  if (prevIcon) prevIcon.setAttribute('aria-label', 'Previous month');
+  if (nextIcon) nextIcon.setAttribute('aria-label', 'Next month');
 }});
 
 function closeTooltip() {{
@@ -218,7 +224,7 @@ document.addEventListener('click', function(e) {{
 
 ---
 
-*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*
+*Want to share information about an upcoming event? Contact us at [ds-help@berkeley.edu](mailto:ds-help@berkeley.edu).*
 '''
 
 display(Markdown(html_output))
