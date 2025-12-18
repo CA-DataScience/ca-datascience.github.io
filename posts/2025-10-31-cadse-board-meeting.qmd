@@ -1,0 +1,48 @@
+---
+title: "Building Pathways for California's Data Science Students: Highlights from the 2025 CADSE Board Meeting"
+date: "2025-10-31"
+categories: [events, education, data-science]
+description: "Recap of the California Alliance for Data Science Education (CADSE) fall meeting, covering course articulation, transfer pathways, and new initiatives across UC, CSU, and community colleges."
+author: "CADSE"
+image: "../assets/favicon.ico"
+image-alt: "Placeholder image for CADSE Board Meeting blog post"
+---
+
+On October 31, 2025, members of the California Alliance for Data Science Education (CADSE) gathered for their annual fall meeting to discuss statewide progress in data science education, from course articulation and transfer pathways to new math curricula and student success stories. The meeting brought together representatives from across the UC, CSU, and community college systems, reflecting CADSE's ongoing mission to streamline data science education across California.
+
+## 1. Clarifying Course Units and Transfer Pathways
+
+A major portion of the discussion centered on the Transfer Model Curriculum (TMC) and C-ID descriptors for Data Science and Statistics — key mechanisms for ensuring course alignment across California's higher-education systems. Ekaterina Fuchs and Judith Canner led a thoughtful exchange about course units and local decision-making at community colleges. Fuchs emphasized that unit counts are determined locally, with C-ID templates offering minimums rather than mandates. For instance, Calculus I is often a 4-unit course but can vary by campus, and even the proposed common-course-numbering system sets a floor, not a requirement. The accounting for units across the "major preparation" category should sum to less than 30 units, but there is potentially an exception for high-unit STEM majors that are allowed to introduce certificates with up to 36 units.
+
+Canner raised the concern that UC and CSU expectations sometimes outpace what smaller CCCs can offer, particularly when it comes to programming sequences or advanced math. Fuchs noted that while UC-aligned pathways often require more STEM-intensive coursework (such as STEM Calculus), an overall goal should be flexibility so students can transfer seamlessly to either system without redundant coursework.
+
+The discussion also covered how to balance rigor with accessibility, particularly as many CCCs lack faculty to offer advanced math. Questions arose about whether an Intro Data Science course should be required or whether Intro Statistics could suffice, and how much computation and coding such courses should include to align with both CS and statistics paths.
+
+## 2. CSU Data Science Major Mapping
+
+The meeting also showcased the growing number of CSU campuses offering Data Science B.S. programs, including:
+
+- CSU Long Beach (Applied Data Science)
+- CSU East Bay (Data Science)
+- CSU Monterey Bay (Statistics & Data Science)
+- CSU Channel Islands
+- Cal Poly Humboldt
+- San José State
+
+Minors are available at more than ten additional CSUs. Mapping these majors and their requirements can potentially feed into the TMC discussion above.
+
+## 3. Math for Data Science: Expanding Access Beyond Calculus
+
+The Mathematics for Data Science initiative continues to gain momentum following its pilot launches at CSU East Bay, CSU Long Beach, and CSU Channel Islands. These innovative courses, some of which require no calculus prerequisite, are being explored as an alternative entry point for students pursuing data-driven fields. The working group is now tracking interest from additional campuses and exploring how this curriculum could fit into existing major pathways and serve as a gateway to data literacy for non-STEM students.
+
+## 4. Collaboration and Community
+
+CADSE continues to strengthen its ecosystem through:
+
+- **Cal-ICOR expansion**, offering open educational modules and teaching resources for instructors statewide.
+- **JupyterCon 2025**, highlighting Jupyter-based teaching innovations and lightweight language-model integrations.
+- **A forthcoming community events calendar**, featuring datathons, workshops, and faculty training opportunities.
+
+## 5. Student Success and Next Steps
+
+The meeting concluded with an invitation for campuses to share student success stories, particularly those highlighting transfer achievements, interdisciplinary projects, and datathon participation. These narratives will help the Alliance showcase the real-world impact of California's intersegmental collaboration in data science education.

@@ -119,7 +119,7 @@ else:
     html_output.append("*No past events to display.*\n")
 
 html_output.append("\n---\n")
-html_output.append("*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*")
+html_output.append("*Want to share information about an upcoming event? Contact us at [ds-help@berkeley.edu](mailto:ds-help@berkeley.edu).*")
 
 # Display as Markdown which allows raw HTML
 display(Markdown("\n".join(html_output)))

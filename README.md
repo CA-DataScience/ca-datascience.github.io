@@ -354,7 +354,7 @@ We welcome contributions from the data science education community!
 
 ### Need Help?
 
-Contact the maintainers at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu)
+Contact the maintainers at [ds-help@berkeley.edu](mailto:ds-help@berkeley.edu)
 
 ---
 
