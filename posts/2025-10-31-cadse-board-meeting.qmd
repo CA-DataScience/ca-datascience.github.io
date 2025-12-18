@@ -4,6 +4,8 @@ date: "2025-10-31"
 categories: [events, education, data-science]
 description: "Recap of the California Alliance for Data Science Education (CADSE) fall meeting, covering course articulation, transfer pathways, and new initiatives across UC, CSU, and community colleges."
 author: "CADSE"
+image: "../assets/favicon.ico"
+image-alt: "Placeholder image for CADSE Board Meeting blog post"
 ---
 
 On October 31, 2025, members of the California Alliance for Data Science Education (CADSE) gathered for their annual fall meeting to discuss statewide progress in data science education, from course articulation and transfer pathways to new math curricula and student success stories. The meeting brought together representatives from across the UC, CSU, and community college systems, reflecting CADSE's ongoing mission to streamline data science education across California.
