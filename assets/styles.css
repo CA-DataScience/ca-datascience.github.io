@@ -261,12 +261,12 @@ html body .quarto-category a:active {
 }
 
 .event-card.event-past {
-  opacity: 0.7;
   background: #f7fafc;
+  border-color: #cbd5e0;
 }
 
-.event-card.event-past:hover {
-  opacity: 0.85;
+.event-card.event-past .event-date-badge {
+  filter: saturate(0.6);
 }
 
 .event-date-badge {
@@ -314,7 +314,7 @@ html body .quarto-category a:active {
   gap: 0.75rem 1.25rem;
   margin-bottom: 0.75rem;
   font-size: 0.875rem;
-  color: #4a5568;
+  color: #2d3748;
 }
 
 .event-meta span {
@@ -325,22 +325,22 @@ html body .quarto-category a:active {
 
 .event-description {
   margin: 0 0 0.75rem 0;
-  color: #4a5568;
+  color: #2d3748;
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
 .event-link {
   display: inline-block;
-  color: #B45308;
-  font-weight: 500;
+  color: #9a4009;
+  font-weight: 600;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }
 
 .event-link:hover {
-  color: #92400e;
+  color: #744210;
   text-decoration: underline;
 }
 
@@ -389,7 +389,15 @@ html body .quarto-category a:active {
 
 [data-bs-theme="dark"] .event-description,
 [data-bs-theme="dark"] .event-meta {
-  color: #a0aec0;
+  color: #cbd5e0;
+}
+
+[data-bs-theme="dark"] .event-link {
+  color: #ed8936;
+}
+
+[data-bs-theme="dark"] .event-link:hover {
+  color: #f6ad55;
 }
 
 [data-bs-theme="dark"] .events-past-section {

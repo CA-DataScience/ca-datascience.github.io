@@ -225,10 +225,10 @@ Choose one of these categories for the `category` field:
 | Category | Color | Use For |
 |----------|-------|---------|
 | `conference` | Navy blue | Multi-day conferences, large gatherings |
-| `workshop` | Green | Hands-on training sessions, tutorials |
-| `webinar` | Purple | Online presentations, virtual talks |
-| `meetup` | Orange | Informal gatherings, networking events |
-| `hackathon` | Red | Coding competitions, hack days |
+| `workshop` | Dark green | Hands-on training sessions, tutorials |
+| `webinar` | Dark purple | Online presentations, virtual talks |
+| `meetup` | Brown | Informal gatherings, networking events |
+| `hackathon` | Dark red | Coding competitions, hack days |
 | `other` | Gray | Anything that doesn't fit above |
 
 #### 5. Complete Example

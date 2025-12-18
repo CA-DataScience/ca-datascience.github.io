@@ -41,13 +41,13 @@ past = [e for e in events if e["date_obj"] < today and (not e.get("end_date_obj"
 upcoming.sort(key=lambda x: x["date_obj"])
 past.sort(key=lambda x: x["date_obj"], reverse=True)
 
-# Category colors
+# Category colors (WCAG AA contrast with white text)
 category_colors = {
     "conference": "#1a365d",
-    "workshop": "#2d8a3e",
-    "webinar": "#6b46c1",
-    "meetup": "#b45308",
-    "hackathon": "#c53030",
+    "workshop": "#1e6f30",
+    "webinar": "#553c9a",
+    "meetup": "#8b4513",
+    "hackathon": "#9b2c2c",
     "other": "#4a5568"
 }
 
