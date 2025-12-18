@@ -1,0 +1,49 @@
+# Events Calendar Data
+# This file is managed by Decap CMS - admins can edit via /admin/
+# Format: YAML list of events
+
+events:
+  - title: "[TEST] Example Workshop Event"
+    date: "2026-01-15"
+    end_date: ""
+    time: "9:00 AM - 5:00 PM PST"
+    location: "Test Location, Building 123"
+    description: "This is a test event to verify the calendar is working. Delete this entry when done testing!"
+    link: ""
+    category: "workshop"
+
+  - title: "NWDSE AI Day 2025"
+    date: "2025-10-17"
+    end_date: ""
+    time: "9:00 AM - 4:00 PM PST"
+    location: "Virtual"
+    description: "Join us for a day focused on AI in data science education. Learn about the latest tools, techniques, and pedagogical approaches for teaching AI concepts."
+    link: "/posts/2025-10-17-nwdse-ai-day.html"
+    category: "conference"
+
+  - title: "Data Science Fundamentals Workshop"
+    date: "2025-04-24"
+    end_date: ""
+    time: "10:00 AM - 2:00 PM PST"
+    location: "UC Berkeley, Evans Hall"
+    description: "A hands-on workshop covering the fundamentals of data science including data wrangling, visualization, and basic statistical analysis."
+    link: "/posts/2025-04-24-data-science-fundamentals.html"
+    category: "workshop"
+
+  - title: "Introduction to Machine Learning"
+    date: "2025-04-25"
+    end_date: ""
+    time: "1:00 PM - 5:00 PM PST"
+    location: "Online via Zoom"
+    description: "An introductory session on machine learning concepts, algorithms, and practical applications in data science."
+    link: "/posts/2025-04-25-machine-learning-intro.html"
+    category: "workshop"
+
+  - title: "INSPIRE 2024 Conference"
+    date: "2024-10-20"
+    end_date: "2024-10-22"
+    time: "All Day"
+    location: "Sacramento, CA"
+    description: "California Learning Lab grantees came together to collaborate on data science education initiatives, curriculum development, and cross-institutional strategies."
+    link: "/posts/2023-10-20-inspire-2024-workshop-recap.html"
+    category: "conference"

@@ -1,22 +1,126 @@
 ---
-title: "Events & Workshops"
+title: "Events Calendar"
+format:
+  html:
+    toc: false
 ---
 
-Stay updated on data science education events, workshops, and conferences. This page highlights upcoming opportunities and provides recaps of past events.
+Stay updated on data science education events, workshops, and conferences.
 
-## Upcoming Events
+```{python}
+#| echo: false
+#| output: asis
 
-*Check back regularly for updates on upcoming workshops and conferences.*
+import yaml
+from datetime import datetime, date
+from pathlib import Path
+from IPython.display import display, HTML, Markdown
 
-## Recent Event Recaps
+# Load events data
+events_file = Path("../_data/events.yml")
+with open(events_file, "r") as f:
+    data = yaml.safe_load(f)
 
-### INSPIRE 2024 Workshop Recap
+events = data.get("events", [])
 
-Our most recent major event was the INSPIRE 2024 Conference workshop, where California Learning Lab grantees came together to collaborate on data science education initiatives. [Read the full recap](../posts/2023-10-20-inspire-2024-workshop-recap.qmd) for details about:
+# Parse dates and sort
+for event in events:
+    event["date_obj"] = datetime.strptime(event["date"], "%Y-%m-%d").date()
+    if event.get("end_date"):
+        event["end_date_obj"] = datetime.strptime(event["end_date"], "%Y-%m-%d").date()
+    else:
+        event["end_date_obj"] = None
 
-- Data science curriculum development discussions
-- Cross-institutional collaboration strategies
-- Assessment and evaluation frameworks
-- Shared teaching materials and resources
+today = date.today()
 
-*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*
+# Split into upcoming and past
+upcoming = [e for e in events if e["date_obj"] >= today or (e.get("end_date_obj") and e["end_date_obj"] >= today)]
+past = [e for e in events if e["date_obj"] < today and (not e.get("end_date_obj") or e["end_date_obj"] < today)]
+
+# Sort upcoming by date (soonest first), past by date (most recent first)
+upcoming.sort(key=lambda x: x["date_obj"])
+past.sort(key=lambda x: x["date_obj"], reverse=True)
+
+# Category colors
+category_colors = {
+    "conference": "#1a365d",
+    "workshop": "#2d8a3e",
+    "webinar": "#6b46c1",
+    "meetup": "#b45308",
+    "hackathon": "#c53030",
+    "other": "#4a5568"
+}
+
+def format_date(event):
+    d = event["date_obj"]
+    formatted = d.strftime("%B %d, %Y")
+    if event.get("end_date_obj"):
+        end = event["end_date_obj"]
+        if d.month == end.month and d.year == end.year:
+            formatted = f"{d.strftime('%B %d')} - {end.strftime('%d, %Y')}"
+        else:
+            formatted = f"{d.strftime('%B %d, %Y')} - {end.strftime('%B %d, %Y')}"
+    return formatted
+
+def render_event(event, is_past=False):
+    cat = event.get("category", "other")
+    color = category_colors.get(cat, category_colors["other"])
+    past_class = "event-past" if is_past else ""
+
+    link_html = ""
+    if event.get("link"):
+        link_html = f'<a href="{event["link"]}" class="event-link">Learn more →</a>'
+
+    month = event["date_obj"].strftime("%b").upper()
+    day = event["date_obj"].strftime("%d")
+
+    return f'''<div class="event-card {past_class}">
+<div class="event-date-badge" style="background-color: {color};">
+<span class="event-month">{month}</span>
+<span class="event-day">{day}</span>
+</div>
+<div class="event-content">
+<h3 class="event-title">{event["title"]}</h3>
+<div class="event-meta">
+<span class="event-date-full">{format_date(event)}</span>
+<span class="event-time">{event.get("time", "TBD")}</span>
+<span class="event-location">{event.get("location", "TBD")}</span>
+</div>
+<p class="event-description">{event.get("description", "")}</p>
+{link_html}
+</div>
+</div>'''
+
+# Build HTML output
+html_output = []
+
+html_output.append("## Upcoming Events\n")
+
+if upcoming:
+    html_output.append('<div class="events-timeline">')
+    for event in upcoming:
+        html_output.append(render_event(event, is_past=False))
+    html_output.append('</div>')
+else:
+    html_output.append("""
+::: {.callout-note}
+No upcoming events scheduled. Check back soon for updates!
+:::
+""")
+
+html_output.append("\n## Past Events\n")
+
+if past:
+    html_output.append('<div class="events-timeline events-past-section">')
+    for event in past:
+        html_output.append(render_event(event, is_past=True))
+    html_output.append('</div>')
+else:
+    html_output.append("*No past events to display.*\n")
+
+html_output.append("\n---\n")
+html_output.append("*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*")
+
+# Display as Markdown which allows raw HTML
+display(Markdown("\n".join(html_output)))
+```
