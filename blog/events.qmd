@@ -62,7 +62,8 @@ for event in events:
             "description": event.get("description", ""),
             "location": event.get("location", "TBD"),
             "time": event.get("time", "TBD"),
-            "category": event.get("category", "other")
+            "category": event.get("category", "other"),
+            "link": event.get("link", "")
         }
     }
 
@@ -72,7 +73,7 @@ for event in events:
         end_date += timedelta(days=1)
         fc_event["end"] = end_date.strftime("%Y-%m-%d")
 
-    # Add link if available
+    # Add link as URL so right-click works
     if event.get("link"):
         fc_event["url"] = event["link"]
 
@@ -93,6 +94,8 @@ html_output = f'''
 
 <div id="calendar"></div>
 
+<div id="tooltip-overlay" style="display: none;"></div>
+
 <div id="event-tooltip" class="event-tooltip" style="display: none;">
   <button class="tooltip-close" onclick="closeTooltip()">&times;</button>
   <h4 id="tooltip-title"></h4>
@@ -109,6 +112,7 @@ html_output = f'''
 document.addEventListener('DOMContentLoaded', function() {{
   var calendarEl = document.getElementById('calendar');
   var tooltip = document.getElementById('event-tooltip');
+  var overlay = document.getElementById('tooltip-overlay');
 
   var calendar = new FullCalendar.Calendar(calendarEl, {{
     initialView: 'dayGridMonth',
@@ -125,7 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {{
     }},
     events: {events_json},
     eventClick: function(info) {{
+      // Prevent navigation to URL
       info.jsEvent.preventDefault();
+      info.jsEvent.stopPropagation();
 
       var event = info.event;
       var props = event.extendedProps;
@@ -162,14 +168,17 @@ document.addEventListener('DOMContentLoaded', function() {{
       document.getElementById('tooltip-description').textContent = props.description || '';
 
       var linkEl = document.getElementById('tooltip-link');
-      if (event.url) {{
-        linkEl.href = event.url;
+      if (props.link) {{
+        linkEl.href = props.link;
+        linkEl.target = '_blank';
         linkEl.style.display = 'inline-block';
       }} else {{
         linkEl.style.display = 'none';
       }}
 
       tooltip.style.display = 'block';
+      overlay.style.display = 'block';
+      document.body.classList.add('tooltip-open');
     }}
   }});
 
@@ -178,14 +187,31 @@ document.addEventListener('DOMContentLoaded', function() {{
 
 function closeTooltip() {{
   document.getElementById('event-tooltip').style.display = 'none';
+  document.getElementById('tooltip-overlay').style.display = 'none';
+  document.body.classList.remove('tooltip-open');
 }}
 
 // Close tooltip when clicking outside
 document.addEventListener('click', function(e) {{
   var tooltip = document.getElementById('event-tooltip');
-  var calendar = document.getElementById('calendar');
   if (!tooltip.contains(e.target) && !e.target.closest('.fc-event')) {{
     tooltip.style.display = 'none';
+    document.getElementById('tooltip-overlay').style.display = 'none';
+    document.body.classList.remove('tooltip-open');
+  }}
+}});
+
+// Close on Escape key
+document.addEventListener('keydown', function(e) {{
+  if (e.key === 'Escape') {{
+    closeTooltip();
+  }}
+}});
+
+// Close when clicking the overlay
+document.addEventListener('click', function(e) {{
+  if (e.target.id === 'tooltip-overlay') {{
+    closeTooltip();
   }}
 }});
 </script>

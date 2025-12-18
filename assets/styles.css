@@ -557,6 +557,18 @@ html body .quarto-category a:active {
   text-decoration: underline;
 }
 
+/* Tooltip overlay + scroll lock */
+#tooltip-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 999;
+}
+
+body.tooltip-open {
+  overflow: hidden;
+}
+
 /* Backdrop overlay when tooltip is open */
 .event-tooltip::before {
   content: '';
