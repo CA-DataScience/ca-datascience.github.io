@@ -3,6 +3,10 @@ title: "Events Calendar"
 format:
   html:
     toc: false
+    include-in-header:
+      - text: |
+          <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css" rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
 ---
 
 Stay updated on data science education events, workshops, and conferences.
@@ -12,9 +16,10 @@ Stay updated on data science education events, workshops, and conferences.
 #| output: asis
 
 import yaml
-from datetime import datetime, date
+import json
+from datetime import datetime, date, timedelta
 from pathlib import Path
-from IPython.display import display, HTML, Markdown
+from IPython.display import display, Markdown
 
 # Load events data
 events_file = Path("../_data/events.yml")
@@ -22,24 +27,6 @@ with open(events_file, "r") as f:
     data = yaml.safe_load(f)
 
 events = data.get("events", [])
-
-# Parse dates and sort
-for event in events:
-    event["date_obj"] = datetime.strptime(event["date"], "%Y-%m-%d").date()
-    if event.get("end_date"):
-        event["end_date_obj"] = datetime.strptime(event["end_date"], "%Y-%m-%d").date()
-    else:
-        event["end_date_obj"] = None
-
-today = date.today()
-
-# Split into upcoming and past
-upcoming = [e for e in events if e["date_obj"] >= today or (e.get("end_date_obj") and e["end_date_obj"] >= today)]
-past = [e for e in events if e["date_obj"] < today and (not e.get("end_date_obj") or e["end_date_obj"] < today)]
-
-# Sort upcoming by date (soonest first), past by date (most recent first)
-upcoming.sort(key=lambda x: x["date_obj"])
-past.sort(key=lambda x: x["date_obj"], reverse=True)
 
 # Category colors (WCAG AA contrast with white text)
 category_colors = {
@@ -51,76 +38,162 @@ category_colors = {
     "other": "#4a5568"
 }
 
-def format_date(event):
-    d = event["date_obj"]
-    formatted = d.strftime("%B %d, %Y")
-    if event.get("end_date_obj"):
-        end = event["end_date_obj"]
-        if d.month == end.month and d.year == end.year:
-            formatted = f"{d.strftime('%B %d')} - {end.strftime('%d, %Y')}"
-        else:
-            formatted = f"{d.strftime('%B %d, %Y')} - {end.strftime('%B %d, %Y')}"
-    return formatted
+category_labels = {
+    "conference": "Conference",
+    "workshop": "Workshop",
+    "webinar": "Webinar",
+    "meetup": "Meetup",
+    "hackathon": "Hackathon",
+    "other": "Other"
+}
 
-def render_event(event, is_past=False):
-    cat = event.get("category", "other")
-    color = category_colors.get(cat, category_colors["other"])
-    past_class = "event-past" if is_past else ""
+# Convert events to FullCalendar format
+fc_events = []
+for event in events:
+    color = category_colors.get(event.get("category", "other"), category_colors["other"])
 
-    link_html = ""
+    fc_event = {
+        "title": event["title"],
+        "start": event["date"],
+        "backgroundColor": color,
+        "borderColor": color,
+        "textColor": "#ffffff",
+        "extendedProps": {
+            "description": event.get("description", ""),
+            "location": event.get("location", "TBD"),
+            "time": event.get("time", "TBD"),
+            "category": event.get("category", "other")
+        }
+    }
+
+    # Handle end date (FullCalendar end is exclusive, so add 1 day)
+    if event.get("end_date"):
+        end_date = datetime.strptime(event["end_date"], "%Y-%m-%d").date()
+        end_date += timedelta(days=1)
+        fc_event["end"] = end_date.strftime("%Y-%m-%d")
+
+    # Add link if available
     if event.get("link"):
-        link_html = f'<a href="{event["link"]}" class="event-link">Learn more →</a>'
+        fc_event["url"] = event["link"]
 
-    month = event["date_obj"].strftime("%b").upper()
-    day = event["date_obj"].strftime("%d")
+    fc_events.append(fc_event)
 
-    return f'''<div class="event-card {past_class}">
-<div class="event-date-badge" style="background-color: {color};">
-<span class="event-month">{month}</span>
-<span class="event-day">{day}</span>
+events_json = json.dumps(fc_events)
+
+# Build the legend HTML
+legend_html = '<div class="calendar-legend">'
+for cat, color in category_colors.items():
+    label = category_labels.get(cat, cat.title())
+    legend_html += f'<span class="legend-item"><span class="legend-color" style="background-color: {color};"></span>{label}</span>'
+legend_html += '</div>'
+
+# Output the calendar HTML and JavaScript
+html_output = f'''
+{legend_html}
+
+<div id="calendar"></div>
+
+<div id="event-tooltip" class="event-tooltip" style="display: none;">
+  <button class="tooltip-close" onclick="closeTooltip()">&times;</button>
+  <h4 id="tooltip-title"></h4>
+  <div class="tooltip-meta">
+    <p><strong>Date:</strong> <span id="tooltip-date"></span></p>
+    <p><strong>Time:</strong> <span id="tooltip-time"></span></p>
+    <p><strong>Location:</strong> <span id="tooltip-location"></span></p>
+  </div>
+  <p id="tooltip-description"></p>
+  <a id="tooltip-link" href="#" class="tooltip-link" style="display: none;">Learn more →</a>
 </div>
-<div class="event-content">
-<h3 class="event-title">{event["title"]}</h3>
-<div class="event-meta">
-<span class="event-date-full">{format_date(event)}</span>
-<span class="event-time">{event.get("time", "TBD")}</span>
-<span class="event-location">{event.get("location", "TBD")}</span>
-</div>
-<p class="event-description">{event.get("description", "")}</p>
-{link_html}
-</div>
-</div>'''
 
-# Build HTML output
-html_output = []
+<script>
+document.addEventListener('DOMContentLoaded', function() {{
+  var calendarEl = document.getElementById('calendar');
+  var tooltip = document.getElementById('event-tooltip');
 
-html_output.append("## Upcoming Events\n")
+  var calendar = new FullCalendar.Calendar(calendarEl, {{
+    initialView: 'dayGridMonth',
+    height: 'auto',
+    headerToolbar: {{
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,listMonth'
+    }},
+    buttonText: {{
+      today: 'Today',
+      month: 'Grid',
+      list: 'List'
+    }},
+    events: {events_json},
+    eventClick: function(info) {{
+      info.jsEvent.preventDefault();
 
-if upcoming:
-    html_output.append('<div class="events-timeline">')
-    for event in upcoming:
-        html_output.append(render_event(event, is_past=False))
-    html_output.append('</div>')
-else:
-    html_output.append("""
-::: {.callout-note}
-No upcoming events scheduled. Check back soon for updates!
-:::
-""")
+      var event = info.event;
+      var props = event.extendedProps;
 
-html_output.append("\n## Past Events\n")
+      // Format date
+      var startDate = event.start;
+      var endDate = event.end;
+      var dateStr = startDate.toLocaleDateString('en-US', {{
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }});
 
-if past:
-    html_output.append('<div class="events-timeline events-past-section">')
-    for event in past:
-        html_output.append(render_event(event, is_past=True))
-    html_output.append('</div>')
-else:
-    html_output.append("*No past events to display.*\n")
+      if (endDate) {{
+        // Subtract 1 day since FullCalendar end is exclusive
+        var actualEnd = new Date(endDate);
+        actualEnd.setDate(actualEnd.getDate() - 1);
+        if (actualEnd > startDate) {{
+          dateStr += ' - ' + actualEnd.toLocaleDateString('en-US', {{
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          }});
+        }}
+      }}
 
-html_output.append("\n---\n")
-html_output.append("*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*")
+      document.getElementById('tooltip-title').textContent = event.title;
+      document.getElementById('tooltip-title').style.color = event.backgroundColor;
+      document.getElementById('tooltip-date').textContent = dateStr;
+      document.getElementById('tooltip-time').textContent = props.time || 'TBD';
+      document.getElementById('tooltip-location').textContent = props.location || 'TBD';
+      document.getElementById('tooltip-description').textContent = props.description || '';
 
-# Display as Markdown which allows raw HTML
-display(Markdown("\n".join(html_output)))
+      var linkEl = document.getElementById('tooltip-link');
+      if (event.url) {{
+        linkEl.href = event.url;
+        linkEl.style.display = 'inline-block';
+      }} else {{
+        linkEl.style.display = 'none';
+      }}
+
+      tooltip.style.display = 'block';
+    }}
+  }});
+
+  calendar.render();
+}});
+
+function closeTooltip() {{
+  document.getElementById('event-tooltip').style.display = 'none';
+}}
+
+// Close tooltip when clicking outside
+document.addEventListener('click', function(e) {{
+  var tooltip = document.getElementById('event-tooltip');
+  var calendar = document.getElementById('calendar');
+  if (!tooltip.contains(e.target) && !e.target.closest('.fc-event')) {{
+    tooltip.style.display = 'none';
+  }}
+}});
+</script>
+
+---
+
+*Want to share information about an upcoming event? Contact us at [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).*
+'''
+
+display(Markdown(html_output))
 ```

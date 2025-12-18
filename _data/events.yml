@@ -1,6 +1,33 @@
 # Events Calendar Data
 
 events:
+  - title: "[TEST] Winter Data Science Bootcamp"
+    date: "2025-12-15"
+    end_date: "2025-12-19"
+    time: "9:00 AM - 4:00 PM PST"
+    location: "UC Davis, Shields Library"
+    description: "A 5-day intensive bootcamp covering Python, pandas, and machine learning fundamentals. Multi-day test event!"
+    link: ""
+    category: "workshop"
+
+  - title: "[TEST] Holiday Hackathon"
+    date: "2025-12-20"
+    end_date: ""
+    time: "10:00 AM - 6:00 PM PST"
+    location: "Online"
+    description: "One-day hackathon to build data-driven holiday projects."
+    link: ""
+    category: "hackathon"
+
+  - title: "[TEST] End of Year Webinar"
+    date: "2025-12-28"
+    end_date: ""
+    time: "2:00 PM - 3:30 PM PST"
+    location: "Zoom"
+    description: "Reflecting on 2025 in data science education and looking ahead to 2026."
+    link: ""
+    category: "webinar"
+
   - title: "[TEST] Example Workshop Event"
     date: "2026-01-15"
     end_date: ""

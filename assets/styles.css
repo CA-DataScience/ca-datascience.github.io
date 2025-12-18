@@ -403,3 +403,256 @@ html body .quarto-category a:active {
 [data-bs-theme="dark"] .events-past-section {
   border-top-color: #4a5568;
 }
+
+/* ===== FullCalendar Styles ===== */
+
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #2d3748;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+#calendar {
+  margin-bottom: 1.5rem;
+}
+
+/* FullCalendar overrides */
+.fc {
+  font-family: inherit;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a365d;
+}
+
+.fc .fc-button-primary {
+  background-color: #1a365d;
+  border-color: #1a365d;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #2c5282;
+  border-color: #2c5282;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background-color: #2c5282;
+  border-color: #2c5282;
+}
+
+.fc .fc-daygrid-day-number {
+  color: #2d3748;
+  padding: 4px 8px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #ebf8ff;
+}
+
+.fc-event {
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+}
+
+/* Event tooltip/popup */
+.event-tooltip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.event-tooltip h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+.tooltip-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #718096;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.tooltip-close:hover {
+  color: #2d3748;
+}
+
+.tooltip-meta {
+  margin-bottom: 1rem;
+}
+
+.tooltip-meta p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.tooltip-meta strong {
+  color: #2d3748;
+}
+
+#tooltip-description {
+  margin: 0 0 1rem 0;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.tooltip-link {
+  display: inline-block;
+  color: #9a4009;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.tooltip-link:hover {
+  color: #744210;
+  text-decoration: underline;
+}
+
+/* Backdrop overlay when tooltip is open */
+.event-tooltip::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* Dark mode for FullCalendar */
+[data-bs-theme="dark"] .calendar-legend {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+[data-bs-theme="dark"] .legend-item {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .fc .fc-toolbar-title {
+  color: #90cdf4;
+}
+
+[data-bs-theme="dark"] .fc .fc-daygrid-day-number {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .fc .fc-daygrid-day.fc-day-today {
+  background-color: #2c5282;
+}
+
+[data-bs-theme="dark"] .fc .fc-col-header-cell-cushion {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .event-tooltip {
+  background: #2d3748;
+  border-color: #4a5568;
+}
+
+[data-bs-theme="dark"] .event-tooltip h4 {
+  color: #90cdf4;
+}
+
+[data-bs-theme="dark"] .tooltip-close {
+  color: #a0aec0;
+}
+
+[data-bs-theme="dark"] .tooltip-close:hover {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .tooltip-meta p,
+[data-bs-theme="dark"] #tooltip-description {
+  color: #cbd5e0;
+}
+
+[data-bs-theme="dark"] .tooltip-meta strong {
+  color: #e2e8f0;
+}
+
+[data-bs-theme="dark"] .tooltip-link {
+  color: #ed8936;
+}
+
+[data-bs-theme="dark"] .tooltip-link:hover {
+  color: #f6ad55;
+}
+
+/* Mobile responsiveness for calendar */
+@media (max-width: 600px) {
+  .fc .fc-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 1.1rem;
+  }
+
+  .calendar-legend {
+    gap: 0.5rem;
+  }
+
+  .legend-item {
+    font-size: 0.75rem;
+  }
+
+  .event-tooltip {
+    padding: 1rem;
+  }
+
+  .event-tooltip h4 {
+    font-size: 1.1rem;
+  }
+}

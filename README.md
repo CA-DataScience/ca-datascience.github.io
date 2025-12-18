@@ -178,11 +178,17 @@ Navigate to the blog page or directly to your post URL:
 
 ## Adding an Event to the Calendar
 
-Events are displayed on the [Events & Workshops](https://ca-datascience.github.io/blog/events.html) page. The calendar automatically sorts events into "Upcoming" and "Past" sections based on the current date.
+Events are displayed on the [Events & Workshops](https://ca-datascience.github.io/blog/events.html) page as an interactive calendar grid powered by [FullCalendar](https://fullcalendar.io/).
 
 ### How It Works
 
-Events are stored in a single YAML data file: `_data/events.yml`. When the site builds, a Python script reads this file and generates the event cards automatically. You don't need to write any HTML—just add your event to the YAML file.
+Events are stored in a single YAML data file: `_data/events.yml`. When the site builds, a Python script reads this file and converts it to FullCalendar format. The calendar displays events in a monthly grid view with:
+- Color-coded events by category
+- Click-to-view event details popup
+- Toggle between grid and list views
+- Navigation between months
+
+You don't need to write any HTML or JavaScript—just add your event to the YAML file.
 
 ### Step-by-Step: Adding a New Event
 
@@ -214,7 +220,7 @@ Add a new event to the `events` list. Each event requires the following fields:
 | `end_date` | No | End date for multi-day events (leave `""` for single-day) | `"2025-03-17"` |
 | `time` | Yes | Time range with timezone | `"9:00 AM - 4:00 PM PST"` |
 | `location` | Yes | Physical venue or virtual platform | `"UC Berkeley, Evans Hall"` or `"Online via Zoom"` |
-| `description` | Yes | Brief event description (shown on the card) | `"A hands-on introduction to Python..."` |
+| `description` | Yes | Brief event description (shown in popup) | `"A hands-on introduction to Python..."` |
 | `link` | No | URL to more information (leave `""` if none) | `"/posts/2025-03-15-python-workshop.html"` |
 | `category` | Yes | Event type (determines badge color) | `"workshop"` |
 
@@ -266,7 +272,7 @@ For events spanning multiple days, use the `end_date` field:
     category: "conference"
 ```
 
-This will display as "September 20 - 22, 2025" on the event card.
+This will display as a multi-day event spanning September 20-22 on the calendar grid.
 
 #### 7. Preview your changes
 
@@ -277,11 +283,11 @@ quarto preview
 ```
 
 Navigate to `http://localhost:3196/blog/events.html` to verify:
-- Your event appears in the correct section (Upcoming or Past)
-- The date, time, and location display correctly
-- The category color badge is correct
-- The description is readable and not cut off
-- The "Learn more" link works (if you added one)
+- Your event appears on the correct date(s) in the calendar grid
+- The event is color-coded correctly for its category
+- Clicking the event shows the popup with correct details
+- The "Learn more" link works in the popup (if you added one)
+- Multi-day events span across the correct dates
 
 #### 8. Commit and push
 
@@ -295,11 +301,12 @@ git push origin your-branch-name
 
 ### Tips
 
-- **Event order doesn't matter** - Events are automatically sorted by date when the page renders
-- **Past events are kept** - Old events automatically move to the "Past Events" section; no need to delete them
+- **Event order doesn't matter** - Events are positioned on the calendar by their date automatically
+- **Past events are kept** - Old events remain visible when navigating to past months; no need to delete them
 - **Link to a blog post** - If your event has a detailed blog post, link to it using `/posts/YYYY-MM-DD-post-name.html`
 - **External links work too** - You can link to external registration pages or event websites
 - **Keep descriptions concise** - Aim for 1-2 sentences; longer details should go in a linked blog post
+- **Use the list view** - Click "List" in the calendar header for a traditional list view of events
 
 ---
 
