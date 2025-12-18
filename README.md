@@ -233,7 +233,7 @@ Choose one of these categories for the `category` field:
 | `conference` | Navy blue | Multi-day conferences, large gatherings |
 | `workshop` | Dark green | Hands-on training sessions, tutorials |
 | `webinar` | Dark purple | Online presentations, virtual talks |
-| `meetup` | Brown | Informal gatherings, networking events |
+| `meeting` | Brown | Informal gatherings, networking events |
 | `hackathon` | Dark red | Coding competitions, hack days |
 | `other` | Gray | Anything that doesn't fit above |
 

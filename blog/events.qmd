@@ -33,7 +33,7 @@ category_colors = {
     "conference": "#1a365d",
     "workshop": "#1e6f30",
     "webinar": "#553c9a",
-    "meetup": "#8b4513",
+    "meeting": "#8b4513",
     "hackathon": "#9b2c2c",
     "other": "#4a5568"
 }
@@ -42,7 +42,7 @@ category_labels = {
     "conference": "Conference",
     "workshop": "Workshop",
     "webinar": "Webinar",
-    "meetup": "Meetup",
+    "meeting": "Meeting",
     "hackathon": "Hackathon",
     "other": "Other"
 }
