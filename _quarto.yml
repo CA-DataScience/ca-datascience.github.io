@@ -50,7 +50,7 @@ website:
       - text: "GitHub"
         href: "https://github.com/ca-datascience/ca-datascience.github.io"
       - text: "Contact"
-        href: "mailto:vivrd@berkeley.edu"
+        href: "mailto:ds-help@berkeley.edu"
     background: "dark"
 
 format:

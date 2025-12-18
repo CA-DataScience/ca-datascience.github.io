@@ -23,4 +23,4 @@ Our recent posts have covered:
 
 ## Contributing
 
-We welcome contributions from the data science education community! If you're interested in writing for our blog, please reach out to [vivrd@berkeley.edu](mailto:vivrd@berkeley.edu).
+We welcome contributions from the data science education community! If you're interested in writing for our blog, please reach out to [ds-help@berkeley.edu](mailto:ds-help@berkeley.edu).
