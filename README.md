@@ -13,6 +13,7 @@ A Quarto-based website providing educational resources, curriculum guidance, and
 - [Installation & Setup](#installation--setup)
 - [Website Overview](#website-overview)
 - [Adding a New Blog Post](#adding-a-new-blog-post)
+- [Adding an Event to the Calendar](#adding-an-event-to-the-calendar)
 - [Contributing](#contributing)
 - [Project Structure](#project-structure)
 
@@ -175,6 +176,133 @@ Navigate to the blog page or directly to your post URL:
 
 ---
 
+## Adding an Event to the Calendar
+
+Events are displayed on the [Events & Workshops](https://ca-datascience.github.io/blog/events.html) page. The calendar automatically sorts events into "Upcoming" and "Past" sections based on the current date.
+
+### How It Works
+
+Events are stored in a single YAML data file: `_data/events.yml`. When the site builds, a Python script reads this file and generates the event cards automatically. You don't need to write any HTML—just add your event to the YAML file.
+
+### Step-by-Step: Adding a New Event
+
+#### 1. Open the events data file
+
+Open `_data/events.yml` in your text editor. You'll see a list of existing events.
+
+#### 2. Add your event entry
+
+Add a new event to the `events` list. Each event requires the following fields:
+
+```yaml
+  - title: "Your Event Title"
+    date: "YYYY-MM-DD"
+    end_date: ""
+    time: "Start Time - End Time Timezone"
+    location: "Venue or Platform"
+    description: "A brief description of the event (1-2 sentences)."
+    link: ""
+    category: "workshop"
+```
+
+#### 3. Field Reference
+
+| Field | Required | Description | Example |
+|-------|----------|-------------|---------|
+| `title` | Yes | The name of the event | `"Python for Beginners Workshop"` |
+| `date` | Yes | Start date in `YYYY-MM-DD` format | `"2025-03-15"` |
+| `end_date` | No | End date for multi-day events (leave `""` for single-day) | `"2025-03-17"` |
+| `time` | Yes | Time range with timezone | `"9:00 AM - 4:00 PM PST"` |
+| `location` | Yes | Physical venue or virtual platform | `"UC Berkeley, Evans Hall"` or `"Online via Zoom"` |
+| `description` | Yes | Brief event description (shown on the card) | `"A hands-on introduction to Python..."` |
+| `link` | No | URL to more information (leave `""` if none) | `"/posts/2025-03-15-python-workshop.html"` |
+| `category` | Yes | Event type (determines badge color) | `"workshop"` |
+
+#### 4. Category Options
+
+Choose one of these categories for the `category` field:
+
+| Category | Color | Use For |
+|----------|-------|---------|
+| `conference` | Navy blue | Multi-day conferences, large gatherings |
+| `workshop` | Green | Hands-on training sessions, tutorials |
+| `webinar` | Purple | Online presentations, virtual talks |
+| `meetup` | Orange | Informal gatherings, networking events |
+| `hackathon` | Red | Coding competitions, hack days |
+| `other` | Gray | Anything that doesn't fit above |
+
+#### 5. Complete Example
+
+Here's a full example of adding a new workshop event:
+
+```yaml
+# _data/events.yml
+
+events:
+  - title: "Introduction to Data Visualization with Python"
+    date: "2025-06-10"
+    end_date: ""
+    time: "1:00 PM - 5:00 PM PST"
+    location: "Online via Zoom"
+    description: "Learn to create compelling visualizations using matplotlib, seaborn, and plotly. This hands-on workshop covers best practices for effective data storytelling."
+    link: "/posts/2025-06-10-data-viz-workshop.html"
+    category: "workshop"
+
+  # ... existing events below ...
+```
+
+#### 6. Multi-Day Event Example
+
+For events spanning multiple days, use the `end_date` field:
+
+```yaml
+  - title: "California Data Science Summit 2025"
+    date: "2025-09-20"
+    end_date: "2025-09-22"
+    time: "All Day"
+    location: "Los Angeles Convention Center"
+    description: "Three days of keynotes, workshops, and networking for data science educators across California."
+    link: "https://example.com/summit-2025"
+    category: "conference"
+```
+
+This will display as "September 20 - 22, 2025" on the event card.
+
+#### 7. Preview your changes
+
+Run the local development server to see your event:
+
+```bash
+quarto preview
+```
+
+Navigate to `http://localhost:3196/blog/events.html` to verify:
+- Your event appears in the correct section (Upcoming or Past)
+- The date, time, and location display correctly
+- The category color badge is correct
+- The description is readable and not cut off
+- The "Learn more" link works (if you added one)
+
+#### 8. Commit and push
+
+Once you've verified everything looks good:
+
+```bash
+git add _data/events.yml
+git commit -m "Add [Event Name] to events calendar"
+git push origin your-branch-name
+```
+
+### Tips
+
+- **Event order doesn't matter** - Events are automatically sorted by date when the page renders
+- **Past events are kept** - Old events automatically move to the "Past Events" section; no need to delete them
+- **Link to a blog post** - If your event has a detailed blog post, link to it using `/posts/YYYY-MM-DD-post-name.html`
+- **External links work too** - You can link to external registration pages or event websites
+- **Keep descriptions concise** - Aim for 1-2 sentences; longer details should go in a linked blog post
+
+---
+
 ## Contributing
 
 We welcome contributions from the data science education community!
@@ -238,13 +366,15 @@ ca-datascience.github.io/
 ├── index.qmd                # Homepage
 ├── blog.qmd                 # Blog listing page
 ├── faqs.qmd                 # FAQ page
+├── _data/                   # Data files
+│   └── events.yml           # Events calendar data
 ├── students/                # Student resources section
 │   ├── index.qmd
 │   └── resources.qmd
 ├── educators/               # Educator resources section
 │   └── index.qmd
 ├── blog/                    # Blog subsections
-│   └── events.qmd
+│   └── events.qmd           # Events calendar page (reads from _data/events.yml)
 ├── posts/                   # Individual blog posts
 │   ├── 2023-10-20-inspire-2024-workshop-recap.qmd
 │   ├── inspire-2024-slideshow.qmd

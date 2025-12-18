@@ -1,6 +1,4 @@
 # Events Calendar Data
-# This file is managed by Decap CMS - admins can edit via /admin/
-# Format: YAML list of events
 
 events:
   - title: "[TEST] Example Workshop Event"
