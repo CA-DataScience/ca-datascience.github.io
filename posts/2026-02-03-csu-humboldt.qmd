@@ -1,0 +1,78 @@
+---
+title: "Building “Science with a Soul” at Cal Poly Humboldt: Data Science, Climate Justice, and Transfer Pathways"
+date: "2026-02-03"
+categories: [education, resources, data-science]
+description: "How Cal Poly Humboldt is building data science around climate justice, faculty community, and transfer pathways."
+author: "Christiana Kang, Kseniya Usovich"
+image: "../assets/favicon.ico"
+image-alt: "Placeholder image for CSU Humboldt blog post"
+---
+
+When Cal Poly Humboldt became California’s third polytechnic university, its new Data Science major arrived with a bold question:
+
+*What would it look like to build data science around community, justice, and real problems our students care about—right from day one?*
+
+With the initiative of the Math department and support from a California Education Learning Lab (CLL) grant, “Building Critical Mass in Data Science,” Humboldt has spent the last two years answering that question in three intertwined ways:
+
+1. Bringing climate and environmental justice into a required introductory science course  
+2. Growing a campus-wide community of data-savvy faculty  
+3. Designing a major and transfer ecosystem that keeps doors open for students across Northern California  
+
+## A Learning Lab grant, a new major, and a “data for good” vision
+
+Humboldt’s Data Science major launched in Fall 2023, just as the university transitioned to polytechnic status. The Learning Lab grant became the engine for building both infrastructure and community around the new program. The project goals were clear:
+
+- Expose a large number of STEM students—especially those from traditionally underrepresented groups—to data science early in their studies  
+- Increase faculty expertise and connections around data science across campus and with regional partners  
+
+The team framed their work around “data for good” and Humboldt’s broader polytechnic ethos of practicing “science with a soul” using quantitative tools in service of real social, environmental, and ethical questions.
+
+## Climate justice modules in a course every STEM student takes
+
+One of the most powerful levers the team identified was **SCI 100**, an introductory science course that almost all STEM majors take in their first year. If they could get data science into that class, they could reach students before they ever self-select into a statistics or coding course.
+
+The grant funded development of two climate justice–themed data science modules, each designed as a 50-minute, plug-and-play class session:
+
+- **Arsenic in drinking water** — introducing students to environmental health and rural equity questions  
+- **Ethanol production and soil carbon sequestration** — surfacing tensions between “green” solutions, land use, and justice  
+
+Each module pairs a short, accessible slide deck on the justice issue and a Jupyter notebook where students run pre-written Python code, generate plots, and answer guided questions. Because the code is provided and carefully scaffolded, instructors can use the materials with students who have never programmed before, while still giving them a taste of the full data science lifecycle: posing questions, exploring data, visualizing results, and drawing conclusions. The modules are now available as Open Educational Resources in Canvas Commons and in the California Learning Lab’s CARLE repository, so other campuses can adopt or adapt them.
+
+**Examples:**  
+- [Soil Carbon “Dirty Decision” Slides](https://carle.calearninglab.org/resources/GeuEcYQI5sbWi08qB3EI/6VSqRwB5C79WcoMFcLL2?q=California+State+University%2C+Humboldt)  
+- [Soil Carbon Notebook](https://colab.research.google.com/drive/1xk55rzZ68ZwY37s1N-fzhBCSPFU1UgGU?usp=sharing)
+
+## Faculty development: Carpentries workshops and a Community of Practice
+
+#### Carpentries workshops
+
+Humboldt partnered with [The Carpentries](https://carpentries.org/), a nonprofit known for inclusive, hands-on teaching of coding and data skills. Over two intensive 16-hour workshops, faculty from disciplines as varied as math, computer science, wildlife, oceanography, education, and the library learned shell, Git, Python, and plotting workflows, often using their own datasets.
+
+#### A Cross-Campus Community of Practice
+
+Alongside formal training, the team launched a Data Science Community of Practice (CoP): eight meetings over two years that brought 43 unique participants together from Humboldt and College of the Redwoods. Topics ranged from high-performance computing via the National Research Platform to the climate justice modules.
+
+## Transfer pathways and a regional data science ecosystem
+
+Faculty from College of the Redwoods (CR) participated in Carpentries workshops, the Community of Practice, and UC Berkeley’s National Data Science Workshop. That exposure directly influenced CR’s decision to:
+
+- Create a new associate degree in Data Science, with an anticipated launch in Fall 2026  
+- Develop courses equivalent to DATA 111 (Intro to Data Science) and DATA 271, helping future transfer students arrive at Humboldt with actual data science coursework rather than only calculus and linear algebra  
+
+## Data science in action: student research stories
+
+[A recent episode](https://datascienceeducation.substack.com/p/faculty-and-student-voices-from-cal) of the *Data Science Education Podcast* featured a conversation with Dr. Larripa and two of her students, illustrating what this ecosystem makes possible for undergraduates.
+
+- John Gerving started as a math major at Humboldt and is now majoring in applied math at UC Berkeley. With Dr. Larripa, he worked on computer vision models to automatically detect and classify microglia—immune cells in the brain—from microscopy images, a project connected to Alzheimer’s and Parkinson’s research.  
+- Jonathan Juarez, a double major in Data Science and Economics at Humboldt, has used data science to analyze housing affordability in Humboldt County and later to study methane emissions at Stanford’s Doerr School of Sustainability. His work highlights how the presence or absence of accessible, reliable data can shape the kinds of questions we’re even able to ask about justice and sustainability.
+  
+
+## What’s next?
+
+Looking ahead, Cal Poly Humboldt is:
+
+- Continuing to run and refine climate justice modules in SCI 100 and statistics courses  
+- Tracking whether early exposure increases enrollment in DATA 111, the Data 8–inspired introductory course  
+- Supporting College of the Redwoods as they stand up their new degree and equivalent lower-division data science courses  
+- Growing a small but mighty Data Science major (and three new certificates set to launch in 2026) into a regional hub for “science with a soul”
+
