@@ -42,6 +42,10 @@ jobs:
       - name: Install Axe and Server
         run: npm install -g @axe-core/cli http-server
 
+      - name: Sync Chrome and ChromeDriver
+        run: npx browser-driver-manager install chrome
+
+
       # 6. Start Local Server (Background Process)
       - name: Start Local Server
         run: |
