@@ -1,0 +1,61 @@
+---
+title: "Pathways Vertical Meeting Highlights: Building Access to Data Science"
+date: "2026-02-11"
+categories: [events, education, data-science]
+description: "Highlights from the January 23 Pathways Vertical Meeting, where California educators shared progress on expanding inclusive data science pathways."
+author: "Christiana Kang, Kseniya Usovich"
+image: "../assets/images/events/pathwaysmeetingcover_012326.png"
+image-alt: "Pathways Vertical Meeting 012326 Blog Post Cover"
+---
+
+Educators and program leaders from across California met on January 23, 2026, for the **Pathways Vertical Meeting**, a working session focused on expanding access to data science education. The meeting brought together teams from multiple Learning Lab–funded Data Science Pathways grants to share progress, challenges, and next steps. Discussions centered on curriculum design, transfer and degree pathways, evaluation, and instructional innovation.
+
+## INCLUDE: Expanding Math for Data Science
+
+The INCLUDE team, led by CSU East Bay, shared updates on the Math for Data Science course. The course is designed as a non-calculus entry point into data science and was offered at CSU East Bay, with partner implementations at CSU Long Beach and CSU Channel Islands. Skyline College is planning to offer the course in Fall 2026.
+
+Early results showed high completion rates and strong academic performance. Most students enrolled were data science majors, though the team emphasized that the course is intentionally designed to support broader access, including future offerings for non-majors. Instruction relies on Python-based computational tools and emphasizes conceptual understanding through applied examples.
+
+The project is now focused on developing and sharing open educational resources. Syllabi, assignments, and assessments are being shared across campuses, with materials designed to be adapted locally. Evaluation efforts include student surveys, institutional data analysis, and external review to track outcomes and guide revisions.
+
+## GLADS-PATH: A Regional Network of Pathways
+
+The Greater LA Data Science Pathways (GLADS-PATH) project highlighted its regional approach to building data science pathways. Partner institutions include CSU San Bernardino, UC Riverside, Rio Hondo College, Norco College, Pasadena City College, and Cal Poly Pomona.
+
+The project supports multiple entry points into data science, including bachelor’s degrees, associate degrees, certificates, minors, and badges. Recent updates included approval of new courses planned for Fall 2026 and continued progress toward a B.S. in Data Science at CSU San Bernardino, pending university approval.
+
+GLADS-PATH also reported on dual and concurrent enrollment offerings aligned with high school pathways. Additional efforts focus on peer mentoring, undergraduate learning assistants, faculty training, and datathons—activities designed to support students across stages of their academic journey.
+
+## Southern California Consortium: Sharing Practice and Resources
+
+The Southern California Consortium for Data Science reported on its work building a shared community across participating campuses. Activities from July to December 2025 included outreach events, faculty professional development, and coordinated curriculum development.
+
+A key focus has been the creation and sharing of open educational resources. These include course materials, faculty training guides, digital badging resources, surveys, and interdisciplinary assignments. The consortium also shared evaluation findings based on surveys and focus groups, which are being used to refine curriculum and instructional support.
+
+This work is supported by the launch of the DS1 Community of Practice, which brings together faculty from across consortium campuses. Faculty meet regularly, with sessions led by members of the professional development subcommittee. Topics include datasets, assessment, AI use, and project design. The Community of Practice serves as a space for instructors to exchange materials, compare approaches, and address common challenges in teaching introductory data science.
+
+## PIPE-LINE: Strengthening the Pipeline
+
+The PIPE-LINE project shared updates on its efforts to strengthen data science education through faculty development and institutional collaboration. A major milestone was the Data Science in the Classroom Conference, held in July 2025 at Riverside City College.
+
+The conference brought together participants from community colleges, CSU, UC, and other institutions. Feedback from attendees was strongly positive, with many noting increased interest in expanding data science offerings at their home institutions.
+
+PIPE-LINE partners include California State University Fullerton, Rio Hondo College, Riverside City College, and UC Irvine. Updates included progress toward an Associate of Science in Data Science within the Riverside Community College District and ongoing work toward a Data Science major at CSU Fullerton.
+
+## Building Inclusive Foundations: Evaluating Student Experiences
+
+The Building Inclusive Foundations in Data Science project presented evaluation findings across City College of San Francisco, Laney College, Berkeley City College, Merced College, and UC Merced.
+
+The team is building a shared dataset using pre- and post-course surveys, institutional data, and focus groups. The goal is to better understand student experiences, including confidence, sense of belonging, science identity, and motivation. Early findings show modest changes in self-perception, alongside challenges with post-survey participation.
+
+Next steps include aggregating data across semesters and campuses, conducting interviews with instructors and counselors, and using findings to improve curriculum, advising, and student support.
+
+## AI-Assisted Grading in Large Courses
+
+The meeting concluded with a talk by Josh Grossman, Assistant Teaching Professor of Statistics and Data Science at UC Berkeley, on AI-assisted grading. Drawing on experiences from Data 100, Grossman compared human grading with AI-assisted approaches in large courses.
+
+He shared data showing reduced grading time and high agreement rates between AI and human graders for high-confidence cases. The talk also addressed equity considerations, noting that grading accuracy and consistency can reduce barriers associated with regrade requests. Grossman also discussed ongoing work to improve rubrics and study grading accuracy more systematically.
+
+## Looking Ahead
+
+Across projects, the meeting reflected a shared commitment to building clear, inclusive pathways into data science. Teams emphasized collaboration, shared materials, and evidence-based evaluation. As Pathways grants move into their next phase, participants highlighted the importance of continuing to learn from one another while adapting solutions to local contexts.
