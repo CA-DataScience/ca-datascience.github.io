@@ -1,0 +1,51 @@
+---
+title: "CADSE Annual Winter Meeting: Transfer Growth and Expanding the Data Science Pipeline"
+date: "2026-02-20"
+categories: [events, education, data-science]
+description: "Highlights from the CADSE Annual Winter Meeting on transfer growth, curriculum alignment, dual enrollment, and K–12 expansion."
+author: "Christiana Kang, Kseniya Usovich"
+image: "../assets/images/events/cadsewintermeetingcover_022026.png"
+image-alt: "CADSE Annual Winter Meeting 022026 Blog Post Cover"
+---
+
+Members of the California Alliance for Data Science Education (CADSE) met on February 20, 2026, for the Annual Winter Meeting. The discussion focused on transfer trends, statewide curriculum alignment, dual enrollment, instructional tools, and K–12 expansion.
+
+## UC Berkeley Updates: Data Science Leads in Transfer
+
+Data Science is now the top transfer major at UC Berkeley, with 204 transfer students currently enrolled in the major. Students are coming from 28 California community colleges. Of those enrolled, 135 students entered with articulated credit for Foundations of Data Science (Data 8).
+
+In total, 25 community colleges have articulation agreements for the course, and 1,200 students across 29 community colleges are using JupyterHub in support of data science instruction. These numbers reflect the growing scale of data science education coordination across California’s higher education systems.
+
+## FDRG Update: Transfer Model Curriculum and C-ID Descriptor
+
+Ekaterina Fuchs shared an update on the Faculty Discipline Review Group (FDRG) process. The group has drafted both a Transfer Model Curriculum (TMC) for Data Science and a C-ID descriptor for Data Science 100, the community college introduction to data science course.
+
+The draft transfer curriculum includes Calculus I, Calculus II, Multivariate Calculus, Linear Algebra, Programming 1 and Programming 2, and Data Science 100. Community colleges will continue to offer local associate degrees, now supported by a clearer, UC transfer–aligned model template and formal course descriptor.
+
+The committee is seeking input on the descriptor and the TMC through a survey, and there was extensive discussion with many perspectives shared.
+
+## Dual Enrollment: Data Science in High Schools
+
+Caroline Hutchins and Solomon Russell provided updates on dual enrollment partnerships.
+
+At El Camino College, two high school districts identified teachers interested in offering Intro to Data Science. Five teachers participated in professional development in 2025, and four completed it. Two dual enrollment courses are being offered during the 2025–26 academic year—one in person and one online serving multiple high schools.
+
+Among fall participants, 37 percent had previously taken a data science course, and 56 percent reported experience working with or analyzing data. The program also hosted a half-day conference for high school partners and invited students to industry events. A mid-year teacher interview process is planned to assess course structure, student population, pacing, alignment with Data 8, instructional modality, and available support.
+
+At Norco College, two sections of dual enrollment for the Foundation of Data Science were offered. One early issue was with no prerequisites on the course, some admitted students lacked intermediate algebra. The course was offered online at students’ request. Of 30 students who began the course, 15 completed it. Student feedback reflected both challenge and persistence, including requests for additional Python practice resources and more structured support when stuck.
+
+## JupyTutor: AI Support Within the Notebook
+
+The meeting also introduced JupyTutor, an AI tutor embedded directly inside the Jupyter notebook environment. The tool, currently in pilot, is designed to operate within course context rather than as an external chat interface. The tool is prompted when an otter-grader test fails, giving users help to fix their code. Prompts are customized at both a high level and a problem-specific level to support productive struggle. Explanations are grounded in textbook context to reinforce conceptual framing.
+
+In Fall 2025 Data 8, 65.7 percent of students used JupyTutor. It has since been deployed in Data 8 for Spring 2026, with expansion planned for Data 140 and Data 100. Future work includes making the tool easier to deploy across courses and incorporating richer notebook context and insights for course staff.
+
+## Data Science 4 Everyone: K–12 Expansion
+
+Hannah Kurzweil presented updates on Data Science 4 Everyone, an initiative focused on bringing data and AI literacy into K–12 education.
+
+The project builds on more than a decade of research and development and outlines a multi-tiered approach that includes a Data Science Starter Kit, curriculum evaluation tools, a national landscape analysis, and model learning progressions. A central framing question guides the work: If a high school exit exam on data were given in 2030, what should it include?
+
+The initiative is partnering with state agencies to integrate data science into standards and course pathways, provide curriculum guidance, and document impact. Activity is underway across 35 states.
+
+The meeting concluded with a broader discussion about alignment in terms of how K–12 data science efforts can connect more directly with articulation and transfer work across California’s higher education systems.
