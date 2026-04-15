@@ -1,0 +1,77 @@
+---
+title: "CLL: Faculty & Interdisciplinary Grantees Meeting"
+date: "2026-01-30"
+categories: [education, events]
+description: "Highlights from the Faculty & Interdisciplinary Grantees Meeting on curriculum development, faculty training, and interdisciplinary data science initiatives."
+author: "Christiana Kang, Kseniya Usovich"
+image: "../assets/images/events/cllfacultyinterdisciplinarymeeting_013026.png"
+image-alt: "Faculty & Interdisciplinary Grantees Meeting 012026 Blog Post Cover"
+---
+
+Faculty and interdisciplinary grantees met on January 30, 2026 to share updates on ongoing projects aimed at expanding data science education across institutions and disciplines. The meeting featured presentations from multiple grant teams working on curriculum development, faculty training, open educational resources, and interdisciplinary course design.
+
+## Enhancing Data Science Teaching Capacity
+
+One project focuses on strengthening data science teaching capacity through collaboration between El Camino College and UC Berkeley. Over the past six months, the team expanded its activities by organizing four industry networking events for students interested in data science. The first event took place on November 5, 2025 and brought together students and professionals for networking and discussion.
+
+The project is also recruiting faculty participants. Seven of nine modules faculty positions have been filled, and professional development opportunities are being offered to instructors outside of computer science and mathematics who are interested in integrating data science into their courses.
+
+Course development is underway as well. The program’s CSCI-9: Practical Data Science course incorporates PrairieLearn questions, and the team is working with an apparel company to develop industry-related materials through approved nondisclosure agreements.
+
+Evaluation efforts include follow-up surveys of faculty who participated in data science professional development. Student surveys are also being conducted in dual-enrollment courses offered through the Torrance Unified School District, which involve four high schools.
+
+The project is also developing open educational resources, including a notebook sharing platform where course modules and instructional materials can be shared with faculty (El Camino College Modules Workbook Notebook Sharing Site Link [here](https://ds-modules.github.io/ecc-textbook/)).
+
+## CONFIDE: Integrating Data Ethics into Coursework
+
+Another initiative, CONFIDE, brings together Cal Poly Maritime + Solano Community College to support faculty in embedding data ethics into discipline-specific courses. The program operates as a Faculty Learning Program designed for both two-year and four-year institutions.
+
+The initiative encourages faculty from different disciplines—including chemistry, public policy, computing, and the social sciences—to incorporate ethical questions about data and AI into their teaching. The program combines academic and industry collaboration and emphasizes equity, context, and inclusive pedagogy.
+
+CONFIDE’s activities include faculty learning cohorts, the development of instructional modules, and the integration of expert video content. Evaluation is embedded throughout the program, with faculty feedback collected through post-module surveys, discussion posts, reflections, and instructional materials created by participants.
+
+These data sources help the team refine module design, improve pacing and workload, and better communicate ethical concepts related to artificial intelligence and machine learning.
+
+The project also plans a deeper qualitative analysis across cohorts after the third faculty cohort completes the program. The entire CONFIDE Faculty Learning Program—including curriculum templates, case studies, and discussion prompts—will eventually be shared as open educational resources.
+
+## Building Data Science Communities
+
+A collaboration between UC Santa Cruz and CSU Monterey Bay is working to build stronger data science communities among faculty and students.
+
+The program launched a five-week Data Science Integration Program pilot cohort with ten participants, including professors, lecturers, graduate students, and a postdoctoral researcher. The program uses Jupyter notebooks and hands-on materials to support interdisciplinary data science learning.
+
+The team also organized a lecture series featuring guest speakers such as high school instructors from a county office of education and faculty discussing team science skills. Sessions were offered in a hybrid format to support broader participation.
+
+Evaluation efforts focus on participation, focus groups, program implementation, and adapting the program to participant needs. The project is also developing instructional materials including Canvas courses, Jupyter notebooks, and a Quarto website.
+
+## Curiosity to Career Readiness
+
+At California State University San Marcos, the Curiosity to Career Readiness project continues to integrate data science into social science education.
+
+The team is embedding data science modules into introductory statistics and quantitative methods courses. They are also developing a minor titled “Data Analytics for Social Scientists,” which is currently under review.
+
+The program offers CS 201: Introduction to Data Science for Social Scientists, which enrolled 20 students in Fall 2025 and 19 students in Spring 2026. A new course, CS 325: Data Science Applications for Social Scientists, has also been proposed and is currently undergoing curriculum review.
+
+To measure student interest in data science, the project distributes a student survey across statistics, quantitative methods, and CS 201 courses. Nearly one thousand responses have been collected so far.
+
+Instructional materials are being shared openly through Canvas Commons, and Google Classroom is used to host Google Colab notebooks for CS 201.
+
+## Designing Inclusive Introductory Data Science Modules
+
+Another collaboration between UC Merced, UC Berkeley, and Laney College is developing interdisciplinary introductory data science modules through the Dubois Data Science for Everyone initiative.
+
+The project’s goal is to create an open-source curriculum at the intersection of computing, statistics, and the social and behavioral sciences while helping institutions build experience with culturally relevant data science teaching.
+
+The curriculum is organized around four four-week modules: Fundamentals and Variables, Visualization, Functions and Algorithms, and Contemporary Topics in Data.
+
+Courses based on this curriculum are being offered across several institutions. Laney College is teaching modules through introductory Python and SQL courses, while UC Berkeley and UC Merced are offering full courses built around the curriculum. Folsom Lake College is also using the materials in introductory programming courses.
+
+Evaluation includes pre- and post-course surveys examining how students perceive data science and whether they continue into further coursework such as Data 8.
+
+The curriculum will be released as open educational resources, including course notes, modular materials, and infrastructure that allows instructors to adapt modules for their own courses.
+
+## Looking Ahead
+
+The meeting concluded with reminders about upcoming reporting deadlines and opportunities for collaboration. Grantees were encouraged to upload materials to CARLE and share their work with broader teaching networks.
+
+An in-person summer meeting for grantees is planned for **June 22–24** at UC Berkeley! Please keep an eye out for additional details and announcements.

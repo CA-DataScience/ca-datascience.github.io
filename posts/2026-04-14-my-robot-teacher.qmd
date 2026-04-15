@@ -1,0 +1,41 @@
+---
+title: "My Robot Teacher: A Conversation Across Disciplines"
+date: "2026-04-14"
+categories: [education, resources]
+description: "A cross-disciplinary conversation on how artificial intelligence is shaping teaching, learning, and higher education."
+author: "Christiana Kang, Kseniya Usovich"
+image: "../assets/images/events/myrobotteacher.png"
+image-alt: "My Robot Teacher Blog Post Cover"
+---
+
+My Robot Teacher is a podcast hosted by Sarah Senk and Taiyo Inoue at California State University Maritime Academy. Bringing together perspectives from the humanities and mathematics, the podcast explores how artificial intelligence is changing teaching, learning, and higher education. The show focuses on the tensions shaping this moment in education: innovation and displacement, efficiency and human connection, experimentation and uncertainty. Through conversations with educators and professionals, Senk and Inoue examine both the practical uses of AI and the larger questions it raises about attention, judgment, and what it means to learn.
+
+Supported by the California Education Learning Lab, the podcast grew out of an ongoing collaboration between the two hosts and their shared interest in helping educators make sense of rapid change in the classroom. Recent episodes continue to explore these questions, including *[The Opposite of AI Slop: AI, Journalism, and Government Transparency](https://calearninglab.org/myrobotteacher/mrt11/)* and *[Teaching without a Script: Improv Pedagogy in the Probabilistic Classroom](https://calearninglab.org/myrobotteacher/mrt10/)*.
+
+## Collaboration with UC Berkeley
+
+As part of this broader conversation, we had the opportunity to collaborate with My Robot Teacher across both of our podcasts. The exchange included two episodes—one hosted on the UC Berkeley Data Science Education Podcast and one on My Robot Teacher—offering perspectives from both sides.
+
+### 1. Crossing Disciplines with AI: A Conversation with My Robot Teacher
+
+On the [UC Berkeley Data Science Education Podcast Season 10, Episode 7](https://datascienceeducation.substack.com/p/crossing-disciplines-with-ai-a-conversation), Sarah Senk and Taiyo Inoue join Eric Van Dusen to discuss their collaboration and approach to AI in education. The conversation centers on interdisciplinarity. Coming from literature and mathematics, the hosts describe how their backgrounds shape their thinking about AI. Inoue frames AI through abstraction, while Senk connects it to narrative, rhetoric, and cultural interpretation.
+
+The discussion also highlights classroom practice. Senk shares how she uses AI in critical reading exercises to help students understand how language and framing influence meaning. Inoue describes using AI as a tutoring tool in mathematics, supporting students as they work through problems step by step.
+
+Throughout the episode, both emphasize curiosity. Rather than offering fixed conclusions, they model how educators can explore AI alongside their students.
+
+### 2. My Robot Teacher, Episode 8: Eric Van Dusen on Data Science and AI Education
+
+In *[Episode 8 of My Robot Teacher](https://calearninglab.org/myrobotteacher/mrt-8/)*, Eric Van Dusen joins as a guest to discuss UC Berkeley’s data science program and its role in shaping AI education.
+
+The episode begins with Data 8: Foundations of Data Science, presented as an accessible entry point that combines statistics, computation, and real-world context. The course’s open-source structure and integrated tools allow it to scale across institutions while maintaining a strong emphasis on applied learning.
+
+A key focus is the role of connector courses, which extend data science into different disciplines. Students apply data science concepts in fields such as social science, economics, and environmental studies, using real datasets to explore domain-specific questions.
+
+The conversation also highlights Jupyter notebooks as a teaching tool, where explanation, code, and output are combined in a single environment. This allows students to learn by doing, experimenting with code and immediately seeing results.
+
+In the second half of the episode, the discussion turns to small language models, which are lightweight enough for students to run and explore directly. This approach shifts AI education from simply using tools to understanding how models work.
+
+## Looking Ahead
+
+The work of My Robot Teacher has also begun to reach broader public audiences. The podcast and its larger questions around AI in higher education were recently featured in the *[Los Angeles Times](https://www.latimes.com/california/story/2026-04-01/csu-ai-survey-students-faculty)*, which highlighted Senk and Inoue’s effort to create a faculty-led space that moves beyond simple hype or fear. The coverage also pointed to one of the podcast’s central concerns: how higher education can help students hold onto their own attention, judgment, and independence as AI becomes more embedded in everyday life.
