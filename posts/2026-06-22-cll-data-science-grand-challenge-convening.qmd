@@ -1,0 +1,51 @@
+---
+title: "CLL June Convening: Connecting Data Science Pathways"
+date: "2026-06-22"
+categories: [events, education, data-science]
+description: "Highlights from the California Learning Lab Data Science Grand Challenge Convening at UC Berkeley, where grantees shared progress on student learning, faculty communities, and transfer pathways."
+draft: true
+---
+
+California Learning Lab (CLL) Data Science Grand Challenge grantees gathered at UC Berkeley on **June 22, 2026**, to share project updates and discuss how to expand access to data science education. The Monday morning convening took place during the [National Workshop on Data Science Education](https://cdss.berkeley.edu/dsus/nwdse), held June 22–24.
+
+Presentations connected work in individual classrooms with broader efforts to build faculty communities, develop degree programs, and support students moving between institutions. Evaluation was a central part of the conversation: how can programs understand students' experiences and measure progress beyond a single course?
+
+## Understanding Students' Experiences
+
+The opening evaluation discussion raised questions about measuring students' success after transfer, persistence in a major, and progress at the institutional level. These questions framed the challenge of understanding what happens as students move through data science pathways.
+
+CSU San Marcos offered one example through its [From Curiosity to Career Readiness project](https://docs.google.com/presentation/d/1cGFhwx6xJAmQOCjjs6sjXT5KZz_xwL2C/edit). The team embeds data science modules in sociology statistics and quantitative methods courses, using topics such as healthcare, online dating, and predictive policing. The modules introduce data science through questions students encounter in their own discipline, with attention to ethics and social justice.
+
+The team's survey findings indicated stronger understanding of data science, greater interest and confidence, and fewer perceived barriers by the end of the semester. Student comments also reflected both curiosity and concerns about the difficulty of the work. The team is using this feedback to refine its modules and computer science courses. Materials are available through Canvas Commons, and faculty who adopt them are asked to administer pre- and post-course surveys.
+
+## Building Faculty Communities Across Disciplines
+
+The [Educational Group for Enrichment in Data Science (EDGE-DS)](https://docs.google.com/presentation/d/1JfZdBpfr_E3Ca7NaOTst3_YjSuWjVomp/edit), a collaboration between UC Santa Cruz and CSU Monterey Bay, described a faculty cohort model built around shared learning and a sense of belonging.
+
+Its yearlong program includes 12 meetings and brings together participants from mathematics, statistics, computer science, linguistics, health science, business, and other fields. Community college participants, faculty, postdoctoral researchers, and graduate students contribute different experiences to the group.
+
+Sessions combine practical work with informal presentations and time to connect. Participants help facilitate discussions, allowing the program to respond to their expertise and teaching needs. Topics include Jupyter notebooks, Quarto, Canvas, Cal-ICOR, and AI in the classroom.
+
+## Connecting Curriculum and Student Support
+
+[Pasadena City College's GLADS-Pathways update](https://docs.google.com/presentation/d/1nK58O5tEYx57Yyq8guS-m3zMbaW-3KZP/edit) highlighted connections between its data science and artificial intelligence/machine learning programs. The AI/ML certificate had received regional consortium approval on June 18, while the associate degree still required an additional course articulation. Shared Python and introductory data science requirements are intended to help students build toward multiple credentials.
+
+Student workers also played a practical role in the project. Undergraduate learning assistants helped translate a psychology statistics lab from Excel into Jupyter notebooks, develop grading materials, and organize the college's first datathon. The presentation recognized both the value of these opportunities and the time required to hire and support student workers.
+
+The [Southern California Consortium for Data Science](https://docs.google.com/presentation/d/17t-VPDBN53FNA8AE5OSKrvNgCRy5mzUc/edit) reported progress across certificates, minors, community college courses, and transfer support. Highlights included Los Angeles City College's Statistical Data Analytics Certificate, San Diego State University's newly launched data science minor, and CSU Channel Islands' revised data science major for incoming transfer students.
+
+The consortium was also expanding summer bridge opportunities and continuing to map course articulation across partner institutions. Regional events complemented that work: CSU Long Beach and Long Beach City College's Data Day at the Beach brought together about 150 participants and volunteers for an industry panel and hands-on activities.
+
+## Sharing Teaching Resources and Computing Support
+
+Several presentations highlighted resources that other instructors can adapt. The Southern California consortium shared [open-source data science ethics modules](https://github.com/SCC4DS/data-science-ethics) covering visualization, classification, sampling, and AI. Pasadena City College shared updates on quizzes, videos, and study materials for introductory data science.
+
+The [opening presentation](https://docs.google.com/presentation/d/1dpDQVetqsZOd-v0oj3fhWK-528pA4xkk/edit) also introduced computing support available through [Cal-ICOR](https://cal-icor.org/). Its JupyterHub infrastructure provides shared computing environments for courses, with tools and resources that can be configured to meet instructors' needs.
+
+## Continuing the Statewide Conversation
+
+Later on Monday, a separate [California Alliance for Data Science Education session](https://docs.google.com/presentation/d/1DJjUUM-1AdUEPU4c2ljIqO0y8VLZP9ud4tCghkNHQ6M/edit) extended the discussion to statewide coordination. Presenters reviewed work on the Data Science Transfer Model Curriculum and an introductory course descriptor, alongside challenges involving local course approval, enrollment, and general education alignment. At the time of the meeting, edits were still pending ahead of a planned fall release.
+
+Together, the day's presentations showed how classroom materials, faculty development, student support, and course articulation contribute to more connected data science pathways across California.
+
+Explore the [Monday presentation slides](https://drive.google.com/drive/folders/1K7y-ElKU5amoWQh4sR_kLj4BoNHeEH4e) for more details on the projects and resources discussed.
