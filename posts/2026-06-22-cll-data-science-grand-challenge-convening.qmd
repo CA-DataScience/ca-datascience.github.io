@@ -3,7 +3,7 @@ title: "CLL June Convening: Connecting Data Science Pathways"
 date: "2026-06-22"
 categories: [events, education, data-science]
 description: "Highlights from the California Learning Lab Data Science Grand Challenge Convening at UC Berkeley, where grantees shared progress on student learning, faculty communities, and transfer pathways."
-draft: true
+author: "Nabiha Sharif"
 ---
 
 California Learning Lab (CLL) Data Science Grand Challenge grantees gathered at UC Berkeley on **June 22, 2026**, to share project updates and discuss how to expand access to data science education. The Monday morning convening took place during the [National Workshop on Data Science Education](https://cdss.berkeley.edu/dsus/nwdse), held June 22–24.
